@@ -1,4 +1,3 @@
-# Link
 <p align="left"> 
   <a href="https://steamcommunity.com/profiles/76561199498888799/" target="_blank">
     <img height="25" src="https://img.shields.io/badge/Released-14 games-blue?logo=steam&style=flat" />
