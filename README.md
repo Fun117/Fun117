@@ -1,7 +1,4 @@
 <p align="left"> 
-  <a href="https://steamcommunity.com/profiles/76561199498888799/" target="_blank">
-    <img height="25" src="https://img.shields.io/badge/Collection-14 games-blue?logo=steam&style=flat" />
-  </a>
   <a href="https://github.com/fun117" target="_blank">
     <img height="25" src="https://img.shields.io/github/followers/fun117?label=follow&logo=github&style=flat" />
   </a>
