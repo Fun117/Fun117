@@ -6,12 +6,12 @@
 
 # 📦 [npm packages](https://www.npmjs.com/~fun117?activeTab=packages)
 <ul>
-  <li>
-    <h1><a href="https://github.com/Fun117/discord-messages-ui">DiscordMsg</a> <a href="https://npmcharts.com/compare/discord-msg-ui-beta?minimal=true"><img alt="download status" src="https://img.shields.io/npm/dm/discord-msg-ui-beta.svg?style=flat"/></a></h1>
-  </li>
-  <li>
-    <h1><a href="https://github.com/Fun117/badge-ui">badge-ui</a> <a href="https://npmcharts.com/compare/badge-ui?minimal=true"><img alt="download status" src="https://img.shields.io/npm/dm/badge-ui.svg?style=flat"/></a></h1>
-  </li>
+  <h1><li>
+    <a href="https://github.com/Fun117/discord-messages-ui">DiscordMsg</a> <a href="https://npmcharts.com/compare/discord-msg-ui-beta?minimal=true"><img alt="download status" src="https://img.shields.io/npm/dm/discord-msg-ui-beta.svg?style=flat"/></a>
+  </li></h1>
+  <h1><li>
+    <a href="https://github.com/Fun117/badge-ui">badge-ui</a> <a href="https://npmcharts.com/compare/badge-ui?minimal=true"><img alt="download status" src="https://img.shields.io/npm/dm/badge-ui.svg?style=flat"/></a>
+  </li></h1>
 </ul>
 
 # 📊 Stats
