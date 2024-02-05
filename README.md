@@ -4,6 +4,11 @@
   </a>
 </p>
 
+<p align="center"> 
+  Visitor count<br>
+  <img src="https://profile-counter.glitch.me/fun117/count.svg" />
+</p>
+
 # 📦 [npm packages](https://www.npmjs.com/~fun117?activeTab=packages)
 <ul>
   <h1><li>
