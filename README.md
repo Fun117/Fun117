@@ -17,7 +17,7 @@
 
 🌱  I’m currently learning Go, Python, Swift
 
-📫  How to reach me: fun117.kun@gmail.com
+📫  How to reach me: fun117.kun@gmail.com or [Fun117](https://twitter.com/Fun_117)
 
 # 📦 [npm packages](https://www.npmjs.com/~fun117?activeTab=packages)
 <ul>
