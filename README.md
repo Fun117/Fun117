@@ -13,7 +13,7 @@
 
 ### A passionate Programmer from Japan
 
-🔭 I’m currently working on <a href="https://github.com/selcold/scratch-building" target="_blank	">Website</a>
+🔭 I’m currently working on [Website](https://github.com/selcold/scratch-building)
 
 🌱  I’m currently learning Go, Python, Swift
 
