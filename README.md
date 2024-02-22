@@ -9,9 +9,15 @@
   <img src="https://profile-counter.glitch.me/fun117/count.svg" />
 </p>
 
-<hr/>
+# 👋 Hi! I'm Fun117
 
+### A passionate Programmer from Japan
 
+🔭 I’m currently working on <a href="https://github.com/selcold/scratch-building" target="_blank	">Website</a>
+
+🌱  I’m currently learning Go, Python, Swift
+
+📫  How to reach me: fun117.kun@gmail.com
 
 # 📦 [npm packages](https://www.npmjs.com/~fun117?activeTab=packages)
 <ul>
