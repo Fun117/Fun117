@@ -11,6 +11,8 @@
 
 # 👋 Hi! I'm Fun117
 
+<img src="https://avatars.githubusercontent.com/u/141471450?s=400&u=d41619c3703941f545528e6928c3e5cdf64f327e&v=4" alt="Fun117 logo" align="right" width="96px"></img>
+
 ### A passionate Programmer from Japan
 
 🔭 I’m currently working on [Website](https://github.com/selcold/scratch-building)
