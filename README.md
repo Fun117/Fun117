@@ -19,6 +19,14 @@
 
 📫  How to reach me: fun117.kun@gmail.com or [Fun117](https://twitter.com/Fun_117)
 
+# 🔗 Links
+- [Discord](https://discord.com/users/990984460365365258)
+- [YouTube](https://www.youtube.com/channel/UCT34DhsVlYoyV8Y4c-MTTrQ)
+- [Twitter (x)](https://twitter.com/Fun_117)
+- [Scratch](https://scratch.mit.edu/users/Fun_117/)
+- [npm](https://www.npmjs.com/~fun117)
+- [Minecraft](https://ja.namemc.com/profile/Fun117.1)
+
 # 📦 [npm packages](https://www.npmjs.com/~fun117?activeTab=packages)
 <ul>
   <h1><li>
