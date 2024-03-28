@@ -1,3 +1,4 @@
+[gmail-img]: assets/icons/gmail.png
 [go-img]: assets/icons/go.png
 [python-img]: assets/icons/python.png
 [swift-img]: assets/icons/swift.png
@@ -30,9 +31,12 @@
 🔭 I’m currently working on [Website](https://github.com/selcold/scratch-building)
 
 
-📫  How to reach me: fun117.kun@gmail.com or [Fun117](https://twitter.com/Fun_117)
+### 📫 How to reach me:
 
-### 🌱  I’m currently learning
+[![Email][gmail-img]](mailto:fun117.kun@gmail.com)
+[![Twitter(x)][twitter-img]](https://twitter.com/Fun_117)
+
+### 🌱 I’m currently learning
 
 [![Go][go-img]](https://go.dev/)
 [![Python][python-img]](https://www.python.org/)
@@ -72,7 +76,9 @@
 ![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=fun117&theme=github_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fun117&theme=github_dark&utcOffset=9)
 
-<p align="center"> 
-  Visitor count<br>
+<div align="center">
   <img src="https://profile-counter.glitch.me/fun117/count.svg" />
-</p>
+</div>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=fun117&color=blue" />
+</div>
