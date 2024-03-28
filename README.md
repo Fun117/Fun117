@@ -78,10 +78,10 @@
       media="(prefers-color-scheme: dark)"
     />
     <source
-      srcset="https://github-readme-stats.vercel.app/api?top-langs/username=fun117&layout=donut"
+      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&layout=donut"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src="https://github-readme-stats.vercel.app/api?top-langs/username=fun117&layout=donut" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&layout=donut" />
   </picture>
 
   <picture>
@@ -141,7 +141,7 @@
       srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fun117&utcOffset=9"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src="https://github-readme-stats.vercel.app/api/cards/productive-time?username=fun117&utcOffset=9" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fun117&utcOffset=9" />
   </picture>
 
   <!--
