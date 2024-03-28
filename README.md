@@ -1,3 +1,6 @@
+[go-img]: assets/icons/go.png
+[python-img]: assets/icons/python.png
+[swift-img]: assets/icons/swift.png
 [discord-img]: assets/icons/discord.png
 [twitter-img]: assets/icons/twitter.png
 [youtube-img]: assets/icons/youtube.png
@@ -26,9 +29,14 @@
 
 🔭 I’m currently working on [Website](https://github.com/selcold/scratch-building)
 
-🌱  I’m currently learning Go, Python, Swift
 
 📫  How to reach me: fun117.kun@gmail.com or [Fun117](https://twitter.com/Fun_117)
+
+### 🌱  I’m currently learning
+
+[![Go][go-img]](https://go.dev/)
+[![Python][python-img]](https://www.python.org/)
+[![Swift][swift-img]](https://www.swift.org/)
 
 # 🔗 Links
 
@@ -41,27 +49,26 @@
 
 # 📦 [npm packages](https://www.npmjs.com/~fun117?activeTab=packages)
 <ul>
-  <h1><li>
+  <h3><li>
     <a href="https://github.com/Fun117/discord-messages-ui">DiscordMsg</a> <a href="https://npmcharts.com/compare/discord-msg-ui-beta?minimal=true"><img alt="download status" src="https://img.shields.io/npm/dt/discord-msg-ui-beta.svg?style=flat"/></a>
-  </li></h1>
-  <h1><li>
+  </li></h3>
+  <h3><li>
     <a href="https://github.com/Fun117/badge-ui">badge-ui</a> <a href="https://npmcharts.com/compare/badge-ui?minimal=true"><img alt="download status" src="https://img.shields.io/npm/dt/badge-ui.svg?style=flat"/></a>
-  </li></h1>
+  </li></h3>
 </ul>
 
 # 📊 Stats
+
+![](https://github-profile-trophy.vercel.app/?username=fun117&theme=algolia&no-frame=true&row=1&&margin-w=20&no-bg=true)
 
 <p align="left"> 
   <img alt="github stats" height="175px" src="https://github-readme-stats.vercel.app/api?username=fun117&theme=ambient_gradient&show_icons=ture" />
   <img alt="github stats" height="175px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fun117&layout=compact&cache_seconds=1800&theme=github_dark&hide=ShaderLab" />
 </p>
 
-![trophy](https://github-profile-trophy.vercel.app/?username=fun117&theme=algolia&column=7)
-
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=fun117&theme=github_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=fun117&theme=github_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=fun117&theme=github_dark)
-
 ![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=fun117&theme=github_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fun117&theme=github_dark&utcOffset=9)
 
