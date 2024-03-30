@@ -1,17 +1,21 @@
+[npm-img]: assets/icons/npm.png
+[discord-img]: assets/icons/discord.png
+[youtube-img]: assets/icons/youtube.png
+[twitter-img]: assets/icons/twitter.png
+
 [gmail-img]: assets/icons/gmail.png
 [go-img]: assets/icons/go.png
 [python-img]: assets/icons/python.png
 [swift-img]: assets/icons/swift.png
-[discord-img]: assets/icons/discord.png
-[twitter-img]: assets/icons/twitter.png
-[youtube-img]: assets/icons/youtube.png
-[npm-img]: assets/icons/npm.png
 [scratch-img]: assets/icons/scratch.png
 [minecraft-img]: assets/icons/minecraft.png
 
 <h1 align="center">
+  <img src="https://avatars.githubusercontent.com/u/141471450?s=400&u=d41619c3703941f545528e6928c3e5cdf64f327e&v=4" alt="Fun117 logo" width="96px"/>
+  
   👋 Hi! I'm Fun117
-  <div align="center">
+  
+  <div>
     <a href="https://github.com/Fun117?tab=followers">
       <img alt="GitHub followers" src="https://img.shields.io/github/followers/fun117">
     </a>
@@ -23,12 +27,10 @@
       <img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCT34DhsVlYoyV8Y4c-MTTrQ">
     </a>
     <a href="https://www.npmjs.com/package/discord-msg-ui-beta">
-      <img alt="NPM Downloads" src="https://img.shields.io/npm/d18m/discord-msg-ui-beta">
+      <img alt="NPM Downloads" src="https://img.shields.io/npm/d18m/discord-msg-ui-beta?style=social">
     </a>
   </div>
 </h1>
-
-<img src="https://avatars.githubusercontent.com/u/141471450?s=400&u=d41619c3703941f545528e6928c3e5cdf64f327e&v=4" alt="Fun117 logo" align="right" width="96px"/>
 
 ### A passionate Programmer from Japan
 
