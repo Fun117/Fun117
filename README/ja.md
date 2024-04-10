@@ -1,14 +1,14 @@
-[npm-img]: assets/icons/npm.png
-[discord-img]: assets/icons/discord.png
-[youtube-img]: assets/icons/youtube.png
-[twitter-img]: assets/icons/twitter.png
+[npm-img]: ../assets/icons/npm.png
+[discord-img]: ../assets/icons/discord.png
+[youtube-img]: ../assets/icons/youtube.png
+[twitter-img]: ../assets/icons/twitter.png
 
-[gmail-img]: assets/icons/gmail.png
-[go-img]: assets/icons/go.png
-[python-img]: assets/icons/python.png
-[swift-img]: assets/icons/swift.png
-[scratch-img]: assets/icons/scratch.png
-[minecraft-img]: assets/icons/minecraft.png
+[gmail-img]: ../assets/icons/gmail.png
+[go-img]: ../assets/icons/go.png
+[python-img]: ../assets/icons/python.png
+[swift-img]: ../assets/icons/swift.png
+[scratch-img]: ../assets/icons/scratch.png
+[minecraft-img]: ../assets/icons/minecraft.png
 
 <h1 align="center">
   <img src="https://avatars.githubusercontent.com/u/141471450?s=400&u=d41619c3703941f545528e6928c3e5cdf64f327e&v=4" alt="Fun117 logo" width="96px"/>
@@ -33,6 +33,16 @@
     -->
   </div>
 </h1>
+
+<div align="center">
+  <a href="../README.md">
+    English
+  </a>
+  ・
+  <a>
+    日本語
+  </a>
+</div>
 
 ### 日本在住の情熱的なプログラマー
 
