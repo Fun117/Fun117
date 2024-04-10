@@ -34,6 +34,16 @@
   </div>
 </h1>
 
+<div align="center">
+  <a>
+    English
+  </a>
+  ・
+  <a href="./README/ja.md">
+    日本語
+  </a>
+</div>
+
 ### A passionate programmer based in Japan.
 
 🔭 I’m currently working on [Website](https://github.com/selcold/scratch-building)
