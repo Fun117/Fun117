@@ -75,26 +75,26 @@
 <p align="left"> 
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api?username=fun117&show_icons=true&theme=github_dark&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage"
+      srcset="https://github-readme-stats.vercel.app/api?username=fun117&locale=ja&show_icons=true&theme=github_dark&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage"
       media="(prefers-color-scheme: dark)"
     />
     <source
-      srcset="https://github-readme-stats.vercel.app/api?username=fun117&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage"
+      srcset="https://github-readme-stats.vercel.app/api?username=fun117&locale=ja&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src="https://github-readme-stats.vercel.app/api?username=fun117&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" />
+    <img src="https://github-readme-stats.vercel.app/api?username=fun117&locale=ja&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" />
   </picture>
 
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&layout=donut&theme=github_dark"
+      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&locale=ja&layout=donut&theme=github_dark"
       media="(prefers-color-scheme: dark)"
     />
     <source
-      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&layout=donut"
+      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&locale=ja&layout=donut"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&layout=donut" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&locale=ja&layout=donut" />
   </picture>
 
   <picture>
