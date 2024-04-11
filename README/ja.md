@@ -158,18 +158,18 @@
   </picture>
 
   <!--
+  -->
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api/wakatime?username=fun117&theme=github_dark"
+      srcset="https://github-readme-stats.vercel.app/api/wakatime?username=fun117&locale=ja&theme=github_dark"
       media="(prefers-color-scheme: dark)"
     />
     <source
-      srcset="https://github-readme-stats.vercel.app/api/wakatime?username=fun117"
+      srcset="https://github-readme-stats.vercel.app/api/wakatime?username=fun117&locale=ja"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=fun117" />
+    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=fun117&locale=ja" />
   </picture>
-  -->
 </p>
 
 <div align="center">
