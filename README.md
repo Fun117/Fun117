@@ -173,6 +173,34 @@
   -->
 </p>
 
+# 🚀 Recent Projects
+
+<p align="left">
+  <picture>
+    <source
+      srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&repo=scratch-building&theme=github_dark"
+      media="(prefers-color-scheme: dark)"
+    />
+    <source
+      srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&repo=scratch-building"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=selcold&repo=scratch-building" />
+  </picture>
+
+  <picture>
+    <source
+      srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&repo=scratch-auth-react&theme=github_dark"
+      media="(prefers-color-scheme: dark)"
+    />
+    <source
+      srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&repo=scratch-auth-react"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&repo=scratch-auth-react" />
+  </picture>
+</p>
+
 <div align="center">
   <img src="https://profile-counter.glitch.me/fun117/count.svg" />
 </div>
