@@ -158,7 +158,6 @@
   </picture>
 
   <!--
-  -->
   <picture>
     <source
       srcset="https://github-readme-stats.vercel.app/api/wakatime?username=fun117&locale=ja&theme=github_dark"
@@ -170,6 +169,7 @@
     />
     <img src="https://github-readme-stats.vercel.app/api/wakatime?username=fun117&locale=ja" />
   </picture>
+  -->
 </p>
 
 # 🚀 最近のプロジェクト
