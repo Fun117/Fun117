@@ -176,6 +176,20 @@
 # 🚀 Recent Projects
 
 <p align="left">
+  <a href="https://github.com/Fun117/nextjs-base-template">
+    <picture>
+      <source
+        srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&repo=nextjs-base-template&theme=github_dark"
+        media="(prefers-color-scheme: dark)"
+      />
+      <source
+        srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&repo=nextjs-base-template"
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+      />
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&repo=nextjs-base-template" />
+    </picture>
+  </a>
+  
   <a href="https://github.com/selcold/scratch-building">
     <picture>
       <source
