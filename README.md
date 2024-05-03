@@ -72,9 +72,39 @@
 [![Scratch][scratch-img]](https://scratch.mit.edu/users/Fun_117/)
 [![Minecraft][minecraft-img]](https://ja.namemc.com/profile/Fun117.1)
 
-# 📊 Stats
+<h1 align="center">
 
-![badge](https://github-profile-trophy.vercel.app/?username=fun117&theme=algolia&no-frame=true&row=1&&margin-w=20&no-bg=true&locales=ja)
+  [📊 Stats]()
+
+  <div>  
+    <a href="https://git.io/streak-stats">
+      <picture>
+        <source
+          srcset="https://github-readme-streak-stats.herokuapp.com?user=Fun117&theme=github-dark-blue&"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-readme-streak-stats.herokuapp.com?user=Fun117"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-readme-streak-stats.herokuapp.com?user=Fun117" />
+      </picture>
+    </a>
+    <a href="https://github.com/ryo-ma/github-profile-trophy">
+      <picture>
+        <source
+          srcset="https://github-profile-trophy.vercel.app/?username=fun117&theme=algolia&row=1&margin-w=20"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-profile-trophy.vercel.app/?username=fun117&theme=flat&row=1&margin-w=20"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-profile-trophy.vercel.app/?username=fun117&theme=flat&row=1&margin-w=20" />
+      </picture>
+    </a>
+  </div>
+</h1>
 
 <p align="left"> 
   <picture>
