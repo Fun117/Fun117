@@ -29,6 +29,9 @@
     <a href="https://www.youtube.com/channel/UCT34DhsVlYoyV8Y4c-MTTrQ">
       <img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCT34DhsVlYoyV8Y4c-MTTrQ">
     </a>
+    <a>
+      <img src="https://komarev.com/ghpvc/?username=fun117&color=blue" />
+    </a>
     <!--
     <a href="https://www.npmjs.com/package/discord-msg-ui-beta">
       <img alt="NPM Downloads" src="https://img.shields.io/npm/d18m/discord-msg-ui-beta?style=social">

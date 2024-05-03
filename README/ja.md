@@ -11,7 +11,7 @@
 [minecraft-img]: ../assets/icons/minecraft.png
 
 <div align="center">
-  <img src="../assets/svg/welcome.svg" alt="Welcome"/>
+  <img src="../assets/svg/welcome.ja.svg" alt="Welcome"/>
 </div>
 <h1 align="center">
   <img src="https://avatars.githubusercontent.com/u/141471450?s=400&u=d41619c3703941f545528e6928c3e5cdf64f327e&v=4" alt="Fun117 logo" width="96px"/>
@@ -28,6 +28,9 @@
     </a>
     <a href="https://www.youtube.com/channel/UCT34DhsVlYoyV8Y4c-MTTrQ">
       <img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCT34DhsVlYoyV8Y4c-MTTrQ">
+    </a>
+    <a>
+      <img src="https://komarev.com/ghpvc/?username=fun117&color=blue" />
     </a>
     <!--
     <a href="https://www.npmjs.com/package/discord-msg-ui-beta">
