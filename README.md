@@ -258,9 +258,8 @@
   </a>
 </p>
 
-<!-- Belarus - My Home-->
-  
- ```geojson
+<!-- Japan, Aichi - My Home-->
+```geojson
 {
  "type": "FeatureCollection",
  "features": [
@@ -282,7 +281,6 @@
    }
  ]
 }
-
 ```
 
 <div align="center">
