@@ -11,7 +11,7 @@
 [minecraft-img]: ../assets/icons/minecraft.png
 
 <div align="center">
-  <img src="assets/svg/welcome.svg" alt="Welcome"/>
+  <img src="../assets/svg/welcome.svg" alt="Welcome"/>
 </div>
 <h1 align="center">
   <img src="https://avatars.githubusercontent.com/u/141471450?s=400&u=d41619c3703941f545528e6928c3e5cdf64f327e&v=4" alt="Fun117 logo" width="96px"/>
@@ -260,3 +260,10 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=fun117&color=blue" />
 </div>
+
+<details>
+  <summary>Credit</summary>
+  <div>
+    <a href="https://github.com/BEPb/">BEPb</a>
+  </div>
+</details>

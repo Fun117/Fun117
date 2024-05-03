@@ -261,3 +261,10 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=fun117&color=blue" />
 </div>
+
+<details>
+  <summary>Credit</summary>
+  <div>
+    <a href="https://github.com/BEPb/">BEPb</a>
+  </div>
+</details>
