@@ -10,6 +10,9 @@
 [scratch-img]: assets/icons/scratch.png
 [minecraft-img]: assets/icons/minecraft.png
 
+<div align="center">
+  <img src="assets/svg/welcome.svg" alt="Welcome"/>
+</div>
 <h1 align="center">
   <img src="https://avatars.githubusercontent.com/u/141471450?s=400&u=d41619c3703941f545528e6928c3e5cdf64f327e&v=4" alt="Fun117 logo" width="96px"/>
   
@@ -109,14 +112,14 @@
 <p align="left"> 
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api?username=fun117&show_icons=true&theme=github_dark&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage"
+      srcset="https://github-readme-stats.vercel.app/api?username=fun117&show_icons=true&theme=github_dark"
       media="(prefers-color-scheme: dark)"
     />
     <source
-      srcset="https://github-readme-stats.vercel.app/api?username=fun117&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage"
+      srcset="https://github-readme-stats.vercel.app/api?username=fun117&show_icons=true"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src="https://github-readme-stats.vercel.app/api?username=fun117&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" />
+    <img src="https://github-readme-stats.vercel.app/api?username=fun117&show_icons=true" />
   </picture>
 
   <picture>
