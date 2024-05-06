@@ -258,6 +258,31 @@
   </a>
 </p>
 
+<!-- Japan, Aichi - My Home-->
+```geojson
+{
+ "type": "FeatureCollection",
+ "features": [
+   {
+     "type": "Feature",
+     "id": 1,
+     "properties": {
+       "ID": 0
+     },
+     "geometry": {
+       "type": "Polygon",
+       "coordinates": [
+         [
+             [136.8339105,35.2],
+             [137.4,34.75]
+         ]
+       ]
+     }
+   }
+ ]
+}
+```
+
 <div align="center">
   <img src="https://profile-counter.glitch.me/fun117/count.svg" />
 </div>
