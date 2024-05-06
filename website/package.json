@@ -1,13 +1,23 @@
 {
+  "author": "Fun117 (https://fun117.vercel.app/)",
+  "homepage": "https://github.com/Fun117/Fun117",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fun117/fun117.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fun117/Fun117/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "node ./scripts/gen-rss.js && next build",
     "start": "next start"
   },
   "dependencies": {
-    "@vercel/og": "^0.5.0",
+    "@vercel/og": "^0.6.2",
     "clsx": "^2.0.0",
-    "framer-motion": "^10.0.0",
+    "framer-motion": "^11.1.7",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.378.0",
     "next": "^14.2.3",
@@ -23,7 +33,7 @@
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.21",
     "autoprefixer": "^10.4.15",
-    "eslint": "^8.30.0",
+    "eslint": "^9.2.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "typescript": "5.4.5"
