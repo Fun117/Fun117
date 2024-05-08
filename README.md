@@ -32,11 +32,6 @@
     <a>
       <img src="https://komarev.com/ghpvc/?username=fun117&color=blue" />
     </a>
-    <!--
-    <a href="https://www.npmjs.com/package/discord-msg-ui-beta">
-      <img alt="NPM Downloads" src="https://img.shields.io/npm/d18m/discord-msg-ui-beta?style=social">
-    </a>
-    -->
   </div>
 </h1>
 
@@ -78,9 +73,22 @@
 [![Scratch][scratch-img]](https://scratch.mit.edu/users/Fun_117/)
 [![Minecraft][minecraft-img]](https://ja.namemc.com/profile/Fun117.1)
 
+<p align="center">
+  <picture>
+    <source
+      srcset="assets/svg/github-contribution-grid-snake-dark.svg"
+      media="(prefers-color-scheme: dark)"
+    />
+    <source
+      srcset="assets/svg/github-contribution-grid-snake.svg"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <img src="assets/svg/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+
 ---
 
-  
 <p align="center">
   <picture>
     <source
@@ -107,14 +115,12 @@
   </picture>
 </p>
 
-
 ---
 
 <p align="center">
   <img width="600" height="200" src="https://github-readme-stats.vercel.app/api?username=Fun117&show_icons=true&theme=github_dark">
   <img width="400" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fun117&size_weight=0.15&count_weight=0.5&layout=compact&theme=github_dark">
 </p>
-
 
 <p align="center"> 
 

@@ -32,11 +32,6 @@
     <a>
       <img src="https://komarev.com/ghpvc/?username=fun117&color=blue" />
     </a>
-    <!--
-    <a href="https://www.npmjs.com/package/discord-msg-ui-beta">
-      <img alt="NPM Downloads" src="https://img.shields.io/npm/d18m/discord-msg-ui-beta?style=social">
-    </a>
-    -->
   </div>
 </h1>
 
@@ -77,65 +72,56 @@
 [![Scratch][scratch-img]](https://scratch.mit.edu/users/Fun_117/)
 [![Minecraft][minecraft-img]](https://ja.namemc.com/profile/Fun117.1)
 
-<h1 align="center">
-
-  [📊 ステータス]()
-
-  <div>  
-    <a href="https://git.io/streak-stats">
-      <picture>
-        <source
-          srcset="https://github-readme-streak-stats.herokuapp.com?user=Fun117&theme=github-dark-blue&locale=ja"
-          media="(prefers-color-scheme: dark)"
-        />
-        <source
-          srcset="https://github-readme-streak-stats.herokuapp.com?user=Fun117&locale=ja"
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img src="https://github-readme-streak-stats.herokuapp.com?user=Fun117&locale=ja" />
-      </picture>
-    </a>
-    <a href="https://github.com/ryo-ma/github-profile-trophy">
-      <picture>
-        <source
-          srcset="https://github-profile-trophy.vercel.app/?username=fun117&theme=algolia&row=1&margin-w=20"
-          media="(prefers-color-scheme: dark)"
-        />
-        <source
-          srcset="https://github-profile-trophy.vercel.app/?username=fun117&theme=flat&row=1&margin-w=20"
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img src="https://github-profile-trophy.vercel.app/?username=fun117&theme=flat&row=1&margin-w=20" />
-      </picture>
-    </a>
-  </div>
-</h1>
-
-<p align="left"> 
+<p align="center">
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api?username=fun117&locale=ja&show_icons=true&theme=github_dark"
+      srcset="../assets/svg/github-contribution-grid-snake-dark.svg"
       media="(prefers-color-scheme: dark)"
     />
     <source
-      srcset="https://github-readme-stats.vercel.app/api?username=fun117&locale=ja&show_icons=true"
+      srcset="../assets/svg/github-contribution-grid-snake.svg"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src="https://github-readme-stats.vercel.app/api?username=fun117&locale=ja&show_icons=true" />
+    <img src="../assets/svg/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+
+---
+
+<p align="center">
+  <picture>
+    <source
+      srcset="https://github-readme-streak-stats.herokuapp.com?user=Fun117&hide_border=true&border_radius=5&card_width=800&theme=github-dark-blue&locale=ja"
+      media="(prefers-color-scheme: dark)"
+    />
+    <source
+      srcset="https://github-readme-streak-stats.herokuapp.com?user=Fun117&hide_border=true&border_radius=5&card_width=800&locale=ja"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <img width="800" height="220" src="https://github-readme-streak-stats.herokuapp.com?user=Fun117&hide_border=true&border_radius=5&card_width=800&locale=ja" />
   </picture>
 
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&locale=ja&layout=donut&theme=github_dark"
+      srcset="https://github-profile-trophy.vercel.app/?username=fun117&theme=algolia&row=1&margin-w=20&no-bg=true&no-frame=true&locale=ja"
       media="(prefers-color-scheme: dark)"
     />
     <source
-      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&locale=ja&layout=donut"
+      srcset="https://github-profile-trophy.vercel.app/?username=fun117&theme=flat&row=1&margin-w=20&no-bg=true&no-frame=true&locale=ja"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=fun117&locale=ja&layout=donut" />
+    <img src="https://github-profile-trophy.vercel.app/?username=fun117&theme=flat&row=1&margin-w=20&no-bg=true&no-frame=true&locale=ja" />
   </picture>
+</p>
 
+---
+
+<p align="center">
+  <img width="600" height="200" src="https://github-readme-stats.vercel.app/api?username=Fun117&show_icons=true&theme=github_dark&locale=ja">
+  <img width="400" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fun117&size_weight=0.15&count_weight=0.5&layout=compact&theme=github_dark&locale=ja">
+</p>
+
+<p align="center">
   <picture>
     <source
       srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=fun117&theme=github_dark"
@@ -195,67 +181,52 @@
     />
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fun117&utcOffset=9" />
   </picture>
-
-  <!--
-  <picture>
-    <source
-      srcset="https://github-readme-stats.vercel.app/api/wakatime?username=fun117&locale=ja&theme=github_dark"
-      media="(prefers-color-scheme: dark)"
-    />
-    <source
-      srcset="https://github-readme-stats.vercel.app/api/wakatime?username=fun117&locale=ja"
-      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-    />
-    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=fun117&locale=ja" />
-  </picture>
-  -->
 </p>
 
-# 🚀 最近のプロジェクト
-
-<p align="left">
-  <a href="https://github.com/Fun117/nextjs-base-template">
-    <picture>
-      <source
-        srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template&theme=github_dark"
-        media="(prefers-color-scheme: dark)"
-      />
-      <source
-        srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template"
-        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-      />
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template" />
-    </picture>
-  </a>
-  
-  <a href="https://github.com/selcold/scratch-building">
-    <picture>
-      <source
-        srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building&theme=github_dark"
-        media="(prefers-color-scheme: dark)"
-      />
-      <source
-        srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building"
-        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-      />
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building" />
-    </picture>
-  </a>
-
-  <a href="https://github.com/Fun117/scratch-auth-react">
-    <picture>
-      <source
-        srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-auth-react&theme=github_dark"
-        media="(prefers-color-scheme: dark)"
-      />
-      <source
-        srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-auth-react"
-        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-      />
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-auth-react" />
-    </picture>
-  </a>
-</p>
+<h1 align="center">
+  🚀 最近のプロジェクト
+  <div align="center">
+    <a href="https://github.com/Fun117/nextjs-base-template">
+      <picture>
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template&theme=github_dark"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template" />
+      </picture>
+    </a>
+    <a href="https://github.com/selcold/scratch-building">
+      <picture>
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building&theme=github_dark"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building" />
+      </picture>
+    </a>
+    <a href="https://github.com/Fun117/scratch-auth-react">
+      <picture>
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-auth-react&theme=github_dark"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-auth-react"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-auth-react" />
+      </picture>
+    </a>
+  </div>
+</h1>
 
 <!-- 日本, 愛知 - My Home-->
 ```geojson
