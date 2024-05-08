@@ -134,7 +134,7 @@
       media="(prefers-color-scheme: dark)"
     />
     <source
-      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Fun117&size_weight=0.15&count_weight=0.5&layout=compact&theme=github_dark&locale=ja"
+      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Fun117&size_weight=0.15&count_weight=0.5&layout=compact&locale=ja"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
     />
     <img width="600" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fun117&size_weight=0.15&count_weight=0.5&layout=compact&locale=ja" />
