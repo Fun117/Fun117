@@ -278,7 +278,7 @@
 </div>
 
 <details>
-  <summary>Credit</summary>
+  <summary>クレジット</summary>
   <div>
     <a href="https://github.com/BEPb/">BEPb</a>
   </div>
