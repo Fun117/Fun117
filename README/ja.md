@@ -276,9 +276,6 @@
 <div align="center">
   <img src="https://profile-counter.glitch.me/fun117/count.svg" />
 </div>
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=fun117&color=blue" />
-</div>
 
 <details>
   <summary>Credit</summary>
