@@ -23,9 +23,12 @@ const themeConfig = {
   },
   docsRepositoryBase: _config.docsRepositoryBase,
   useNextSeoProps() {
-    return {
-      titleTemplate: `%s – ${_config.title}`,
-    };
+    const { asPath } = useRouter();
+    if (asPath !== "/") {
+      return {
+        titleTemplate: `%s – ${_config.title}`,
+      };
+    }
   },
   toc: {
     float: true,

@@ -1,4 +1,11 @@
 {
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  },
   "index": {
     "title": "ホーム",
     "type": "page",
