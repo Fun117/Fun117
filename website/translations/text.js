@@ -71,3 +71,9 @@ export const gitTimestampMap = {
   ja: "最終更新日",
   "en-US": "Last updated on",
 };
+
+/** @type {Readonly<Record<Locale, string>>} */
+export const read_more = {
+  ja: "続きを読む",
+  "en-US": "Read more",
+};
