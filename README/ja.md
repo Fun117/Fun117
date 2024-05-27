@@ -219,19 +219,6 @@
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template" />
       </picture>
     </a>
-    <a href="https://github.com/selcold/scratch-building">
-      <picture>
-        <source
-          srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building&theme=github_dark"
-          media="(prefers-color-scheme: dark)"
-        />
-        <source
-          srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building"
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building" />
-      </picture>
-    </a>
     <a href="https://github.com/Fun117/scratch-auth-react">
       <picture>
         <source
@@ -243,6 +230,32 @@
           media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
         />
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-auth-react" />
+      </picture>
+    </a>
+    <a href="https://github.com/Fun117/zshmgr">
+      <picture>
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=zshmgr&theme=github_dark"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=zshmgr"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=zshmgr" />
+      </picture>
+    </a>
+    <a href="https://github.com/selcold/scratch-building">
+      <picture>
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building&theme=github_dark"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building" />
       </picture>
     </a>
   </div>
