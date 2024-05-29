@@ -245,17 +245,17 @@
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=zshmgr" />
       </picture>
     </a>
-    <a href="https://github.com/selcold/scratch-building">
+    <a href="https://github.com/fun117/scratch-cloud-logs">
       <picture>
         <source
-          srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building&theme=github_dark"
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-cloud-logs&theme=github_dark"
           media="(prefers-color-scheme: dark)"
         />
         <source
-          srcset="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building"
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-cloud-logs"
           media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
         />
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=selcold&locale=ja&repo=scratch-building" />
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=scratch-cloud-logs" />
       </picture>
     </a>
   </div>
