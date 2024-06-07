@@ -21,7 +21,7 @@ export default function BlogIndex({ }) {
             style={{ color: "inherit", textDecoration: "none" }}
             className="block font-semibold mt-8 text-2xl"
           >
-            {page.frontMatter?.title || page.name}
+            {page.meta?.title || page.frontMatter?.title || page.name}
           </Link>
         </h3>
         <p className="opacity-80 mt-6 leading-7">
