@@ -54,7 +54,7 @@ export const gridItems = [
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/assets/brand/fun117/fun117_fullscreen_bgnone_1683x1080.png",
+    img: "/assets/brand/fun117/fullscreen_bgnone_1683x1080.png",
     spareImg: "/assets/svg/grid.svg",
   },
   {
@@ -107,9 +107,21 @@ export const projects = [
 export const testimonials = [
   {
     name: "Tisk_01010100",
-    icon: "/assets/brand/tisk_01010100/tisk_01010100.png",
+    icon: "/assets/brand/tisk_01010100/icon.png",
     title: "BOT Developer",
-    quote: "I was greatly impressed by Fun117's technical skills and expertise. He has the ability to swiftly and accurately resolve complex issues encountered during development, significantly contributing to the progress of our projects. Moreover, he possesses excellent communication skills, consistently maintaining an open and collaborative attitude. This made it easy to share ideas and exchange opinions, allowing us to move forward with mutual understanding. Lastly, I feel truly honored to have had the opportunity to develop alongside such an outstanding partner.",
+    quote: "I was very impressed by Fun117's technical skills and problem-solving abilities, which greatly advanced our projects. His excellent communication and collaborative attitude made idea sharing easy and productive. It was an honor to work with such an outstanding partner.",
+  },
+  {
+    name: "Tisk_01010100",
+    icon: "/assets/brand/tisk_01010100/icon.png",
+    title: "BOT Developer",
+    quote: "I was very impressed by Fun117's technical skills and problem-solving abilities, which greatly advanced our projects. His excellent communication and collaborative attitude made idea sharing easy and productive. It was an honor to work with such an outstanding partner.",
+  },
+  {
+    name: "Tisk_01010100",
+    icon: "/assets/brand/tisk_01010100/icon.png",
+    title: "BOT Developer",
+    quote: "I was very impressed by Fun117's technical skills and problem-solving abilities, which greatly advanced our projects. His excellent communication and collaborative attitude made idea sharing easy and productive. It was an honor to work with such an outstanding partner.",
   },
 ];
 
@@ -117,20 +129,20 @@ export const companies = [
   {
     id: 1,
     name: "Masaabu-YT",
-    img: "/assets/brand/masaabu-yt/masaabu-yt.webp",
+    img: "/assets/brand/masaabu-yt/icon.webp",
     className: "rounded-full",
     nameImg: "",
   },
   {
     id: 2,
     name: "Tisk_01010100",
-    img: "/assets/brand/tisk_01010100/tisk_01010100.png",
+    img: "/assets/brand/tisk_01010100/icon.png",
     nameImg: "",
   },
   {
     id: 3,
     name: "メタロロ",
-    img: "/assets/brand/dmmo-com-jp/dmmo-com-jp.png",
+    img: "/assets/brand/dmmo-com-jp/icon.png",
     nameImg: "",
   },
 ];
