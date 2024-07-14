@@ -1,0 +1,79 @@
+{
+  "Metadata": {
+    "title": "Fun117",
+    "description": "このプロジェクトは、最新のWebアプリケーションを構築するための堅牢なスタートポイントを提供することを目的としたNext.jsテンプレートです。事前に構成されたローカリゼーションサポート、テーマ切り替え、その他のさまざまな機能が含まれており、開発を効率化します。"
+  },
+  "PageError": {
+    "title": "不明なエラーが発生",
+    "retry": "リトライ"
+  },
+  "PageNotFound": {
+    "title": "ページが見つかりません"
+  },
+  "Theme": {
+    "Toggle theme": "テーマを切り替える",
+    "Mode": "モード",
+    "Light": "ライト",
+    "Dark": "ダーク",
+    "System": "システム"
+  },
+  "Languages": {
+    "Language": "言語",
+    "Select a language": "言語を選択"
+  },
+  "Footer": {
+    "footerText": "著作権 © 2024 Fun117. 無断複写・転載を禁じます",
+    "items": {
+      "Resources": "リソース",
+      "Scratch Building": "ビル経営ゲーム",
+      "Projects": "プロジェクト",
+      "Next&#46;js Rich Template": "Next.jsリッチテンプレート",
+      "About Fun117": "Fun117について"
+    }
+  },
+  "PageHome": {
+    "Hello, I'm Fun117!": "こんにちは、Fun117 です！",
+    "words": {
+      "website": "ウェブサイト",
+      "database": "データベース",
+      "service": "サービス",
+      "module": "モジュール"
+    },
+    "development": "開発",
+    "status": {
+      "Followers": "フォロワー",
+      "Repository": "リポジトリ",
+      "Days on GitHub": "GitHubでの日々"
+    }
+  },
+  "PageProjects": {
+    "items": {
+      "n1": {
+        "title": "Next.jsリッチテンプレート",
+        "description": "このプロジェクトは、最新のWebアプリケーションを構築するための堅牢なスタートポイントを提供することを目的としたNext.jsテンプレートです。事前に構成されたローカリゼーションサポート、テーマ切り替え、その他のさまざまな機能が含まれており、開発を効率化します。",
+        "image": "/projects/nextjs-rich-tpl/website-ja.png",
+        "links": {
+          "website": "https://nextjs-rich-tpl.vercel.app/ja"
+        }
+      },
+      "n2": {
+        "title": "Scratch Auth React",
+        "description": "Scratch Auth は、Scratch用のシンプルな OAuthサービスです。開発者にはわかりやすいAPIを、エンドユーザーにはスムーズなログイン体験を提供します。scratch-auth-react を使うことで更に簡単に OAuth 機能をサイトに実装することができます。"
+      },
+      "n3": {
+        "title": "Scratch Cloud API Logger",
+        "description": "このプロジェクトは、Scratch Cloud APIを使用してクラウド変数への変更を記録するように設計されたNode.jsスクリプトです。このプロジェクトはScratch Cloud APIを使用してクラウド変数の変更をロギングするためのNode.jsスクリプトです。"
+      },
+      "n4": {
+        "title": "Zshmgr",
+        "description": "Zshmgr は、Zsh用のシンプルなパッケージマネージャーです。ユーザーはパッケージのインストール、アンインストール、アップデート、リスト表示を簡単に行うことができます。このツールはGitHubリポジトリとシームレスに連携するように設計されており、Zshスクリプトやツールの管理が容易になります。",
+        "links": {
+          "website": "https://zshmgr.vercel.app"
+        }
+      }
+    }
+  },
+  "Home": "ホーム",
+  "About": "概要",
+  "Projects": "プロジェクト"
+}
