@@ -206,17 +206,17 @@
 <h1 align="center">
   🚀 最近のプロジェクト
   <div align="center">
-    <a href="https://github.com/Fun117/nextjs-base-template">
+    <a href="https://github.com/Fun117/nextjs-rich-tpl">
       <picture>
         <source
-          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template&theme=github_dark"
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-rich-tpl&theme=github_dark"
           media="(prefers-color-scheme: dark)"
         />
         <source
-          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template"
+          srcset="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-rich-tpl"
           media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
         />
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-base-template" />
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=fun117&locale=ja&repo=nextjs-rich-tpl" />
       </picture>
     </a>
     <a href="https://github.com/Fun117/scratch-auth-react">
