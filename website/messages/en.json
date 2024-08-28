@@ -73,7 +73,14 @@
       }
     }
   },
+  "PageContacts": {
+    "Metadata": {
+      "title": "Contacts"
+    },
+    "Contacts": "Contacts"
+  },
   "Home": "Home",
   "About": "About",
-  "Projects": "Projects"
+  "Projects": "Projects",
+  "Contacts": "Contacts"
 }

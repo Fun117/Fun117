@@ -73,7 +73,14 @@
       }
     }
   },
+  "PageContacts": {
+    "Metadata": {
+      "title": "連絡先"
+    },
+    "Contacts": "連絡先"
+  },
   "Home": "ホーム",
   "About": "概要",
-  "Projects": "プロジェクト"
+  "Projects": "プロジェクト",
+  "Contacts": "連絡先"
 }

@@ -100,6 +100,12 @@ const config: Config = {
             i18n_link: true, // Whether to include locale prefix in the URL
             i18n_text: true, // Whether to include locale prefix in the Text
           },
+          {
+            label: "Contacts", // Label for the item
+            to: "/contacts", // Internal URL path
+            i18n_link: true, // Whether to include locale prefix in the URL
+            i18n_text: true, // Whether to include locale prefix in the Text
+          }
         ],
         project: {
           repository: "block", // Display the repository link in the header
