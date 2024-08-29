@@ -47,6 +47,9 @@
     }
   },
   "PageProjects": {
+    "Metadata": {
+      "title": "プロジェクト"
+    },
     "items": {
       "n1": {
         "title": "Next.jsリッチテンプレート",

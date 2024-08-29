@@ -1,11 +1,14 @@
 "use client";
 
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-
 import React, { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
+import Image from "next/image";
+
 import { GetAllData } from "@/components/api/github";
+
+import { motion } from "framer-motion";
+
 import { FlipWords } from "@/components/ui/flip-words";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -126,14 +129,32 @@ export default function Home() {
   return (
     <div className="relative flex min-h-[calc(100vh-64px)] flex-col justify-between items-center p-2 md:p-8 lg:p-24 xl:p-36">
       <div className="flex flex-wrap flex-col-reverse lg:flex-row justify-center items-center w-full py-10">
-        <div className="w-fit lg:mr-20">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 3,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="w-fit lg:mr-20"
+        >
           <div className="font-normal text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mx-auto">
             <h1 className="font-bold">{t("Hello, I'm Fun117!")}</h1>
             <FlipWords words={words} />
             {t("development")}
           </div>
-        </div>
-        <div className="w-fit">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 3,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="w-fit"
+        >
           <Avatar className="w-[300px] h-[300px]">
             <AvatarImage
               width={300}
@@ -142,10 +163,19 @@ export default function Home() {
             />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="flex flex-wrap flex-col md:flex-row justify-center items-center gap-3 w-full my-5">
+      <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 3,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="flex flex-wrap flex-col md:flex-row justify-center items-center gap-3 w-full my-5"
+      >
         <div className="flex flex-col md:flex-row justify-center items-center gap-2">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
             {followers ? (
@@ -204,11 +234,20 @@ export default function Home() {
           </h1>
           <p>{t("status.Days on GitHub")}</p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="w-full my-5">
+      <motion.div
+        initial={{ opacity: 0, scale: 0, y: 100 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{
+          duration: 1,
+          delay: 1,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="w-full my-5"
+      >
         <StickyScroll content={content} />
-      </div>
+      </motion.div>
     </div>
   );
 }

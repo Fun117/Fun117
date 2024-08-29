@@ -1,7 +1,8 @@
 import { getTranslations } from "next-intl/server";
-import CPage from "./Cpage";
 import { Metadata, ResolvingMetadata } from "next";
 import { LayoutProps } from "../layout";
+
+import CPage from "./Cpage";
 
 export async function generateMetadata(
   { params }: LayoutProps,
