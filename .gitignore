@@ -1,50 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+/website
+
+._*
+
 # dependencies
 /node_modules
-/website/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
 # testing
 /coverage
-/website/coverage
 
 # next.js
 /.next/
-/website/.next/
+/out/
 
 # production
 /build
-/website/build
 
 # misc
 .DS_Store
-/website/.DS_Store
+*.pem
 
 # debug
 npm-debug.log*
-/website/npm-debug.log*
-
 yarn-debug.log*
-/website/yarn-debug.log*
-
 yarn-error.log*
-/website/yarn-error.log*
 
 # local env files
 .env*.local
-/website/.env*.local
 
 # vercel
 .vercel
-/website/.vercel
 
 # typescript
 *.tsbuildinfo
-/website/*.tsbuildinfo
-
 next-env.d.ts
-/website/next-env.d.ts
-
-# test files
-/test
-/website/test
-
-.turbo

@@ -1,0 +1,76 @@
+{
+  "Metadata": {
+    "title": "Fun117",
+    "description": "このプロジェクトは、最新のWebアプリケーションを構築するための堅牢なスタートポイントを提供することを目的としたNext.jsテンプレートです。事前に構成されたローカリゼーションサポート、テーマ切り替え、その他のさまざまな機能が含まれており、開発を効率化します。"
+  },
+  "PageError": {
+    "title": "不明なエラーが発生",
+    "retry": "リトライ"
+  },
+  "PageNotFound": {
+    "title": "ページが見つかりません"
+  },
+  "Theme": {
+    "Toggle theme": "テーマを切り替える",
+    "Mode": "モード",
+    "Light": "ライト",
+    "Dark": "ダーク",
+    "System": "システム"
+  },
+  "Languages": {
+    "Language": "言語",
+    "Select a language": "言語を選択"
+  },
+  "SearchCommand": {
+    "Search website&#46;&#46;&#46;": "サイト内検索...",
+    "Search&#46;&#46;&#46;": "検索...",
+    "No results found&#46;": "結果は見つかりませんでした。",
+    "Type a command or search&#46;&#46;&#46;": "コマンドの入力または検索...",
+    "items": {
+      "Pages": "ページ",
+      "Home": "ホーム",
+      "Contacts": "お問い合わせ"
+    }
+  },
+  "Footer": {
+    "footerText": "著作権 © 2024 Fun117. 無断複写・転載を禁じます",
+    "items": {
+      "Resources": "リソース",
+      "Docs": "ドキュメント",
+      "Learn": "学ぶ",
+      "Showcase": "ショーケース",
+      "Blog": "ブログ",
+      "Analytics": "アナリティクス",
+      "Next&#46;js Conf": "Next.jsカンファレンス",
+      "Previews": "プレビュー",
+      "More": "その他",
+      "Next&#46;js Commerce": "Next.js コマース",
+      "Contact Sales": "コンタクトセールス",
+      "Releases": "リリース",
+      "Telemetry": "テレメトリ",
+      "Governance": "ガバナンス",
+      "About Vercel": "Vercelについて",
+      "Next&#46;js + Vercel": "Next.js + Vercel",
+      "Open Source Software": "オープンソースソフトウェア"
+    }
+  },
+  "Pages": {
+    "Home": {
+      "HeroContentParallax": {
+        "hi": "こんにちは、Fun117です！",
+        "dev": "フルスタック開発者",
+        "bio": "Next.jsに熱中し、ウェブ開発に専念する日本在住の情熱的なプログラマー"
+      },
+      "HerpInfo": {
+        "bio": "ウェブ開発を中心としたNext.js愛好家。Next.jsを使ったWebアプリケーション、Webサイト、Eコマースサイト、データベースの開発に積極的に取り組んでいる。"
+      }
+    },
+    "Contacts": {
+      "Metadata": {
+        "title": "お問い合わせ",
+        "description": "以下の連絡先からお気軽にご連絡ください。できるだけ早くご返信いたします。"
+      }
+    }
+  },
+  "Home": "ホーム"
+}
