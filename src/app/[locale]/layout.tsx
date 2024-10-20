@@ -57,6 +57,13 @@ export async function generateMetadata({
     return alternates;
   };
 
+  let image;
+  if (lang === "ja") {
+    image = "/wp-content/ja-light-fullscreen.png";
+  } else {
+    image = "/wp-content/en-light-fullscreen.png";
+  }
+
   return {
     title: {
       template: `%s | ${
@@ -101,6 +108,7 @@ export async function generateMetadata({
         config.description ||
         t(`description`),
       images:
+        image ||
         config.themeConfig.metadata?.openGraph?.images ||
         config.themeConfig.image,
       locale:
@@ -129,6 +137,7 @@ export async function generateMetadata({
         "Fun_117"
       }`,
       images:
+        image ||
         config.themeConfig.metadata?.twitter?.images ||
         config.themeConfig.image,
     },
