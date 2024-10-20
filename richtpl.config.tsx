@@ -51,8 +51,6 @@ const config: Config = {
       defaultMode: "system", // Default color mode (light, dark, or system)
       selectSwitch: true, // Whether to allow switching color modes
     },
-    // URL to the social card image (replace with your project's image)
-    // image: "/image/upload/front/nextjs/twitter-card.png",
     // Metadata for the site
     metadata: {
       keywords: [
