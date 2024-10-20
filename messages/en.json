@@ -1,0 +1,77 @@
+{
+  "Metadata": {
+    "title": "Fun117",
+    "description": "This project is a Next.js template aimed at providing a robust starting point for building modern web applications. It comes with pre-configured localization support, theme toggling, and various other features to streamline development."
+  },
+  "PageError": {
+    "title": "Unknown error",
+    "retry": "Retry"
+  },
+  "PageNotFound": {
+    "title": "Page not found"
+  },
+  "Theme": {
+    "Toggle theme": "Toggle theme",
+    "Mode": "Mode",
+    "Light": "Light",
+    "Dark": "Dark",
+    "System": "System"
+  },
+  "Languages": {
+    "Language": "Language",
+    "Select a language": "Select a language"
+  },
+  "SearchCommand": {
+    "Search website&#46;&#46;&#46;": "Search website...",
+    "Search&#46;&#46;&#46;": "Search...",
+    "No results found&#46;": "No results found.",
+    "Type a command or search&#46;&#46;&#46;": "Type a command or search...",
+    "items": {
+      "Pages": "Pages",
+      "Home": "Home",
+      "Contacts": "Contacts"
+    }
+  },
+  "Footer": {
+    "footerText": "Copyright © 2024 Fun117. All rights reserved.",
+    "items": {
+      "Resources": "Resources",
+      "Docs": "Docs",
+      "Learn": "Learn",
+      "Showcase": "Showcase",
+      "Blog": "Blog",
+      "Analytics": "Analytics",
+      "Next&#46;js Conf": "Next.js Conf",
+      "Previews": "Previews",
+      "More": "More",
+      "Next&#46;js Commerce": "Next.js Commerce",
+      "Contact Sales": "Contact Sales",
+      "Releases": "Releases",
+      "Telemetry": "Telemetry",
+      "Governance": "Governance",
+      "About Vercel": "About Vercel",
+      "Next&#46;js + Vercel": "Next.js + Vercel",
+      "Open Source Software": "Open Source Software"
+    }
+  },
+  "Pages": {
+    "Home": {
+      "HeroContentParallax": {
+        "hi": "Hello, I'm Fun117!",
+        "dev": "full stack developer",
+        "bio": "A passionate programmer based in Japan, enthusiastic about Next.js and focused on web development."
+      },
+      "HerpInfo": {
+        "bio": "A Next.js enthusiast with a focus on web development. Passionate about building with Next.js and actively involved in developing web applications, websites, e-commerce sites, and databases."
+      }
+    },
+    "Contacts": {
+      "Metadata": {
+        "title": "Contacts",
+        "description": "Please feel free to contact us using the contact information below. We will get back to you as soon as possible."
+      }
+    }
+  },
+  "Home": "Home",
+  "About": "About"
+}

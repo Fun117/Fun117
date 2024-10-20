@@ -6,14 +6,6 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: '/website'
+    directory: "/"
     schedule:
       interval: "daily"
-    groups:
-      angular:
-        applies-to: version-updates
-        patterns:
-        - "tar"
-        update-types:
-        - "minor"
-        - "patch"
