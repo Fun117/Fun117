@@ -174,9 +174,7 @@ export default async function LocaleLayout({
                 <BackgroundBoxes>
                   <Header />
                   <main className="w-full h-full min-h-[calc(100dvh-64px)]">
-                    <Suspense fallback={<LoaderRo13 time={-1} />}>
-                      {children}
-                    </Suspense>
+                    {children}
                   </main>
                   <Footer />
                 </BackgroundBoxes>

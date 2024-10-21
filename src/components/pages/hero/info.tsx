@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { Suspense } from "react";
 import { Avatar } from "@nextui-org/avatar";
 import {
   Card,
@@ -10,6 +12,7 @@ import {
   Image,
   Chip,
   Tooltip,
+  Skeleton,
 } from "@nextui-org/react";
 
 import {
@@ -265,17 +268,25 @@ function HerpInfo() {
   return (
     <div
       id="user-info"
-      className="flex flex-col justify-center items-center w-auto container"
+      className="flex flex-col justify-center items-center w-auto my-5 container"
     >
       <div
         id="bio"
         className="flex flex-wrap justify-center items-center gap-5 max-w-xl"
       >
-        <Avatar
-          src="/wp-content/fun117/new/400x400.png"
-          className="w-32 h-32 md:w-40 md:h-40 text-large shadow-md"
-        />
-        <p className="text-center">{t("bio")}</p>
+        <Suspense
+          fallback={
+            <Skeleton className="w-32 h-32 md:w-40 md:h-40 text-large shadow-md" />
+          }
+        >
+          <Avatar
+            src="/wp-content/fun117/new/400x400.png"
+            className="w-32 h-32 md:w-40 md:h-40 text-large shadow-md"
+          />
+        </Suspense>
+        <Suspense fallback={<Skeleton className="w-full" />}>
+          <p className="text-center">{t("bio")}</p>
+        </Suspense>
       </div>
       <SocialLinksButton />
       <section
@@ -284,42 +295,44 @@ function HerpInfo() {
       >
         {cards.map((card, idx) => {
           return (
-            <Card key={idx} className="place-self-auto max-w-[400px]">
-              <CardHeader className="flex gap-3">
-                <Image
-                  alt="nextui logo"
-                  height={40}
-                  radius="sm"
-                  src={card.image}
-                  width={40}
-                />
-                <div className="flex flex-col">
-                  <Link isExternal showAnchorIcon href={card.link}>
-                    <p className="text-md">
-                      {card.org && `${card.org}/`}
-                      {card.title}
-                    </p>
-                  </Link>
-                  <div className="text-small text-default-500 mt-1">
-                    {CardStatus(card.status)}
-                  </div>
-                </div>
-              </CardHeader>
-              <Divider />
-              <CardBody>
-                <p>{card.description}</p>
-              </CardBody>
-              <Divider />
-              <CardFooter>
-                <div className="flex justify-center items-center gap-1">
-                  <span
-                    className="w-5 h-5 rounded-full border border-neutral-500"
-                    style={{ backgroundColor: card.language.color }}
+            <Suspense  key={idx} fallback={<Skeleton className="place-self-auto max-w-[400px]"/>}>
+              <Card key={idx} className="w-full">
+                <CardHeader className="flex gap-3">
+                  <Image
+                    alt="nextui logo"
+                    height={40}
+                    radius="sm"
+                    src={card.image}
+                    width={40}
                   />
-                  <span>{card.language.label}</span>
-                </div>
-              </CardFooter>
-            </Card>
+                  <div className="flex flex-col">
+                    <Link isExternal showAnchorIcon href={card.link}>
+                      <p className="text-md">
+                        {card.org && `${card.org}/`}
+                        {card.title}
+                      </p>
+                    </Link>
+                    <div className="text-small text-default-500 mt-1">
+                      {CardStatus(card.status)}
+                    </div>
+                  </div>
+                </CardHeader>
+                <Divider />
+                <CardBody>
+                  <p>{card.description}</p>
+                </CardBody>
+                <Divider />
+                <CardFooter>
+                  <div className="flex justify-center items-center gap-1">
+                    <span
+                      className="w-5 h-5 rounded-full border border-neutral-500"
+                      style={{ backgroundColor: card.language.color }}
+                    />
+                    <span>{card.language.label}</span>
+                  </div>
+                </CardFooter>
+              </Card>
+            </Suspense>
           );
         })}
       </section>

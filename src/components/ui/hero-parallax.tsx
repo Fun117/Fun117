@@ -1,4 +1,5 @@
 "use client";
+
 import React, { Suspense } from "react";
 import {
   motion,
@@ -73,21 +74,36 @@ export const HeroParallax = ({
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product, idx) => (
-            <ProductCard product={product} translate={translateX} key={idx} />
+            <Suspense
+              fallback={<Skeleton className="w-full h-full" key={idx} />}
+              key={idx}
+            >
+              <ProductCard product={product} translate={translateX} key={idx} />
+            </Suspense>
           ))}
         </motion.div>
         <motion.div className="flex flex-row  mb-20 space-x-20 ">
           {secondRow.map((product, idx) => (
-            <ProductCard
-              product={product}
-              translate={translateXReverse}
+            <Suspense
+              fallback={<Skeleton className="w-full h-full" key={idx} />}
               key={idx}
-            />
+            >
+              <ProductCard
+                product={product}
+                translate={translateXReverse}
+                key={idx}
+              />
+            </Suspense>
           ))}
         </motion.div>
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
           {thirdRow.map((product, idx) => (
-            <ProductCard product={product} translate={translateX} key={idx} />
+            <Suspense
+              fallback={<Skeleton className="w-full h-full" key={idx} />}
+              key={idx}
+            >
+              <ProductCard product={product} translate={translateX} key={idx} />
+            </Suspense>
           ))}
         </motion.div>
       </motion.div>
@@ -135,15 +151,13 @@ export const ProductCard = ({
         href={product.link}
         className="block group-hover/product:shadow-2xl "
       >
-        <Suspense fallback={<Skeleton className="w-[600] h-[600]" />}>
-          <Image
-            src={product.thumbnail}
-            height="600"
-            width="600"
-            className="object-cover object-left-top absolute h-full w-full inset-0"
-            alt={product.title}
-          />
-        </Suspense>
+        <Image
+          src={product.thumbnail}
+          height="600"
+          width="600"
+          className="object-cover object-left-top absolute h-full w-full inset-0"
+          alt={product.title}
+        />
       </Link>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
