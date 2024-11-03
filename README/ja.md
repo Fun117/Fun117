@@ -47,7 +47,7 @@
 
 ### 日本在住の情熱的なプログラマー
 
-- **年齢**: 14
+- **年齢**: 15
 - **職業**: 中学生
 
 🔭 現在、[Website](https://github.com/selcold/scratch-building) に取り組んでいます。
