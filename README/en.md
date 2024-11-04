@@ -47,7 +47,7 @@
 
 ### A passionate programmer based in Japan.
 
-- **Age**: 14
+- **Age**: 15
 - **Occupation**: junior high school student
 
 🔭 I’m currently working on [Website](https://github.com/selcold/scratch-building)
