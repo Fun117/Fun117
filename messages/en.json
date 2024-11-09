@@ -12,6 +12,7 @@
   },
   "Theme": {
     "Toggle theme": "Toggle theme",
+    "Theme": "Theme",
     "Mode": "Mode",
     "Light": "Light",
     "Dark": "Dark",
@@ -33,6 +34,7 @@
     }
   },
   "Footer": {
+    "role": "FullStack Developer",
     "footerText": "Copyright © 2024 Fun117. All rights reserved.",
     "items": {
       "Resources": "Resources",
@@ -56,13 +58,8 @@
   },
   "Pages": {
     "Home": {
-      "HeroContentParallax": {
-        "hi": "Hello, I'm Fun117!",
-        "dev": "full stack developer",
-        "bio": "A passionate programmer based in Japan, enthusiastic about Next.js and focused on web development."
-      },
-      "HerpInfo": {
-        "bio": "A Next.js enthusiast with a focus on web development. Passionate about building with Next.js and actively involved in developing web applications, websites, e-commerce sites, and databases."
+      "Metadata": {
+        "title": "Home"
       }
     },
     "Contacts": {
@@ -70,8 +67,48 @@
         "title": "Contacts",
         "description": "Please feel free to contact us using the contact information below. We will get back to you as soon as possible."
       }
+    },
+    "Hero": {
+      "top-content": {
+        "title": "Fun117 is engaged in a wide range of creative projects",
+        "description": "Primarily, they develop websites and applications, while also creating mini-games and custom features using commands in Minecraft, as well as developing mods."
+      },
+      "job-status": {
+        "followersCount": "Followers",
+        "repoCount": "Repositories",
+        "daysPassed": "Days Passed"
+      },
+      "description": {
+        "title": "As a trusted partner in the digital realm, we drive the success of your projects.",
+        "description": "We act within feasible boundaries, without accepting unreasonable requests, and consistently strive to learn new technologies and stay informed. We ensure project success in an ever-evolving digital environment."
+      },
+      "projects": {
+        "1": {
+          "title": "Next.js Rich Template",
+          "description": "This project is a Next.js template aimed at providing a robust starting point for building modern web applications. It comes with pre-configured localization support, theme toggling, and various other features to streamline development."
+        },
+        "2": {
+          "title": "Scratch Auth",
+          "description": "Scratch Auth is a simple OAuth service for Scratch. It provides developers with an easy-to-understand API and users with a smooth login experience. By using @scratch-auth/nextjs, you can easily implement OAuth functionality into your site."
+        },
+        "3": {
+          "title": "Scratch Building",
+          "description": "Scratch Building is a game developed on the Scratch platform, and this repository serves as its official website. It provides various features including account authentication, commenting, notifications, and community engagement."
+        }
+      },
+      "faq": {
+        "title": "Frequency Asked Question",
+        "items": {
+          "1": {
+            "question": "What are the charges for a request?",
+            "answer": "We offer a wide range of pricing options from free to paid. Currently, we generally accept requests for free."
+          }
+        }
+      }
     }
   },
-  "Home": "Home",
-  "About": "About"
+  "buttons": {
+    "Request": "Request",
+    "Learn More": "Learn More"
+  }
 }

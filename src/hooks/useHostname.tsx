@@ -3,7 +3,7 @@
 import { headers } from "next/headers";
 
 export async function useHostname() {
-  const headersList = headers();
+  const headersList = await headers();
   const hostname = headersList.get("x-forwarded-host");
   return hostname;
 }

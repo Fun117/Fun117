@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,24 +16,22 @@ import { ThemeProvider } from "@/components/provider/theme";
 
 // ui
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Header from "@/components/nav/header";
-import LoaderRo13 from "@/components/ui/loaderro13";
-import Footer from "@/components/nav/footer";
 import { headers } from "next/headers";
-import { NextUIProvider } from "@nextui-org/react";
-import { BackgroundBoxes } from "@/components/pages/bg";
+import { notFound } from "next/navigation";
+import { CustomCursor } from "@/components/ui/mouse-pointer";
 
 export type LayoutProps = {
-  params: { locale: string };
+  locale: string;
 };
 
-export async function generateMetadata({
-  params,
-}: LayoutProps): Promise<Metadata> {
-  const lang = params.locale;
-  const t = await getTranslations({ lang, namespace: "Metadata" });
+export async function generateMetadata(props: {
+  params: LayoutProps;
+}): Promise<Metadata> {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
 
-  const pathname = headers().get("x-pathname");
+  const header = await headers();
+  const pathname = header.get("x-pathname");
   const path = pathname ? pathname : "";
 
   const generateAlternates = () => {
@@ -48,7 +45,7 @@ export async function generateMetadata({
 
     for (const locale of config.i18n.locales) {
       const localeConfig = config.i18n.localeConfigs[locale];
-      const cleanPath = path.replace(`/${params.locale}`, ""); // Remove current locale from path
+      const cleanPath = path.replace(`/${locale}`, ""); // Remove current locale from path
       alternates.languages[
         localeConfig.htmlLang
       ] = `${config.url}/${localeConfig.path}${cleanPath}`;
@@ -56,13 +53,6 @@ export async function generateMetadata({
 
     return alternates;
   };
-
-  let image;
-  if (lang === "ja") {
-    image = "/wp-content/ja-light-fullscreen.png";
-  } else {
-    image = "/wp-content/en-light-fullscreen.png";
-  }
 
   return {
     title: {
@@ -108,12 +98,11 @@ export async function generateMetadata({
         config.description ||
         t(`description`),
       images:
-        image ||
         config.themeConfig.metadata?.openGraph?.images ||
         config.themeConfig.image,
       locale:
         config.themeConfig?.metadata?.openGraph?.locale ||
-        config.i18n.localeConfigs[lang].htmlLang ||
+        config.i18n.localeConfigs[locale].htmlLang ||
         "ja-JP",
     },
     twitter: {
@@ -137,7 +126,6 @@ export async function generateMetadata({
         "Fun_117"
       }`,
       images:
-        image ||
         config.themeConfig.metadata?.twitter?.images ||
         config.themeConfig.image,
     },
@@ -147,11 +135,16 @@ export async function generateMetadata({
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: LayoutProps;
 }) {
+  const { locale } = await params;
+  if (!config.i18n.locales.includes(locale as any)) {
+    notFound();
+  }
+
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
@@ -159,29 +152,26 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${inter} relative w-full h-full min-h-dvh overflow-x-clip`}
+        className={`${inter.className} relative w-full h-full min-h-dvh overflow-x-clip`}
         suppressHydrationWarning
       >
-        <NextUIProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme={config.themeConfig.colorMode.defaultMode}
-            enableSystem
-            disableTransitionOnChange
-          >
-            <NextIntlClientProvider messages={messages}>
-              <TooltipProvider>
-                <BackgroundBoxes>
-                  <Header />
-                  <main className="w-full h-full min-h-[calc(100dvh-64px)]">
-                    {children}
-                  </main>
-                  <Footer />
-                </BackgroundBoxes>
-              </TooltipProvider>
-            </NextIntlClientProvider>
-          </ThemeProvider>
-        </NextUIProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme={config.themeConfig.colorMode.defaultMode}
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextIntlClientProvider messages={messages}>
+            <TooltipProvider>
+              {/* <Header /> */}
+              <main className="w-full h-full min-h-[calc(100dvh-64px)]">
+                {children}
+              </main>
+              {/* <Footer /> */}
+            </TooltipProvider>
+            <CustomCursor />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
