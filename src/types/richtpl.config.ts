@@ -51,8 +51,7 @@ type Header = {
     content?: React.ReactNode | React.JSX.Element; // Logo content
   };
   items?: {
-    left?: NavItem[]; // Array of navigation items on the left side
-    right?: NavItem[]; // Array of navigation items on the right side
+    nav?: NavItem[]; // Array of navigation items on the left side
     project?: {
       repository?: "block" | "hidden"; // Visibility of the repository link
     };

@@ -48,9 +48,10 @@ const config: Config = {
   themeConfig: {
     // Color mode settings
     colorMode: {
-      defaultMode: "system", // Default color mode (light, dark, or system)
+      defaultMode: "light", // Default color mode (light, dark, or system)
       selectSwitch: true, // Whether to allow switching color modes
     },
+    image: "/wp-content/fun117/new/rounded/256x256.ico",
     // Metadata for the site
     metadata: {
       keywords: [
@@ -72,44 +73,22 @@ const config: Config = {
       robots: "follow, index",
       metadataBase: new URL("https://fun117.dev"),
     },
-    SearchCommand: [
-      {
-        label: "Pages",
-        i18n_text: true,
-        items: [
-          {
-            label: "Home",
-            icon: <Home />,
-            to: "/",
-            i18n_text: true,
-          },
-          {
-            label: "Contacts",
-            icon: <BookUser />,
-            to: "/contacts",
-            i18n_text: true,
-            i18n_link: true,
-          },
-        ],
-      },
-    ],
     // Header configuration
     header: {
       // Title for the header
       title: "Fun117",
       // Navigation items in the header
       items: {
-        // Items on the left side of the header
-        left: [
+        nav: [
           {
-            label: "Home", // Label for the item
+            label: "Pages.Home.Metadata.title", // Label for the item
             to: "/", // Internal URL path
             i18n_link: true, // Whether to include locale prefix in the URL
             i18n_text: true, // Whether to include locale prefix in the Text
           },
           {
             label: "Pages.Contacts.Metadata.title", // Label for the item
-            to: "/contacts", // Internal URL path
+            href: "https://forms.gle/okPj49cvruieVURB7", // Internal URL path
             i18n_link: true, // Whether to include locale prefix in the URL
             i18n_text: true, // Whether to include locale prefix in the Text
           },

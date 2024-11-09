@@ -1,10 +1,7 @@
 "use client";
 
 import * as React from "react";
-import {
-  Command,
-  Search,
-} from "lucide-react";
+import { Command, Search } from "lucide-react";
 
 import {
   CommandDialog,
@@ -16,10 +13,16 @@ import {
 } from "@/components/ui/command";
 import config from "../../../richtpl.config";
 import { useTranslations } from "next-intl";
-import { DialogTitle } from "./dialog";
+import { DialogDescription, DialogTitle } from "./dialog";
 import { TLink } from "./Tcomps";
 
-export function SearchCommandDialog({ minWidth, maxWidth }: { minWidth?: number, maxWidth?: number}) {
+export function SearchCommandDialog({
+  minWidth,
+  maxWidth,
+}: {
+  minWidth?: number;
+  maxWidth?: number;
+}) {
   const t = useTranslations("SearchCommand");
   const [open, setOpen] = React.useState(false);
 
@@ -27,8 +30,10 @@ export function SearchCommandDialog({ minWidth, maxWidth }: { minWidth?: number,
     const down = (e: KeyboardEvent) => {
       const width = window.innerWidth;
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
-        if ((minWidth === undefined || width >= minWidth) &&
-            (maxWidth === undefined || width <= maxWidth)) {
+        if (
+          (minWidth === undefined || width >= minWidth) &&
+          (maxWidth === undefined || width <= maxWidth)
+        ) {
           e.preventDefault();
           setOpen((open) => !open);
         }
@@ -74,6 +79,7 @@ export function SearchCommandDialog({ minWidth, maxWidth }: { minWidth?: number,
       </div>
       <CommandDialog open={open} onOpenChange={setOpen}>
         <DialogTitle />
+        <DialogDescription />
         <CommandInput
           placeholder={t("Type a command or search&#46;&#46;&#46;")}
         />
