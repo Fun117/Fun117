@@ -42,7 +42,7 @@ function HeroProjects() {
 
   return (
     <motion.div
-      className="w-full mx-5 sm:!mx-10"
+      className="container w-full p-5 sm:!p-10 mx-5 sm:!mx-10"
       ref={ref1}
       style={{
         transform: isInView1 ? "none" : "translateY(100px)",
