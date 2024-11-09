@@ -1,5 +1,4 @@
 import React from "react";
-import LoaderRo13 from "@/components/ui/loaderro13";
 import { LoaderRound } from "@/components/ui/loading";
 
 function Loading() {

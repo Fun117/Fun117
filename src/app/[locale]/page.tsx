@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+
 import NavContent from "@/components/nav/nav-content";
 import HeroDescription from "@/components/pages/hero/description";
 import HeroFAQ from "@/components/pages/hero/faq";

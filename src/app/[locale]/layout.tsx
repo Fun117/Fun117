@@ -16,8 +16,6 @@ import { ThemeProvider } from "@/components/provider/theme";
 
 // ui
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Header from "@/components/nav/header";
-import Footer from "@/components/nav/footer";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { CustomCursor } from "@/components/ui/mouse-pointer";
