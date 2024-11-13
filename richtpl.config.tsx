@@ -51,7 +51,7 @@ const config: Config = {
       defaultMode: "light", // Default color mode (light, dark, or system)
       selectSwitch: true, // Whether to allow switching color modes
     },
-    image: "/wp-content/fun117/new/rounded/256x256.ico",
+    image: "/wp-content/fun117/new/rounded/400x400.png",
     // Metadata for the site
     metadata: {
       keywords: [
