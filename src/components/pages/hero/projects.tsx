@@ -42,7 +42,7 @@ function HeroProjects() {
 
   return (
     <motion.div
-      className="container w-full p-5 sm:!p-10 mx-5 sm:!mx-10"
+      className="container w-full p-5 sm:!p-10 sm:!mx-10"
       ref={ref1}
       style={{
         transform: isInView1 ? "none" : "translateY(100px)",
@@ -67,7 +67,7 @@ function HeroProjects() {
               duration: 0.5,
               ease: "easeInOut",
             }}
-            className="flex flex-col justify-between items-start bg-blue-50 dark:bg-blue-900 border border-neutral-200/50 dark:bg-neutral-800/50 p-5 rounded-2xl shadow-sm"
+            className="flex flex-col justify-between items-start bg-neutral-50 dark:bg-neutral-900 border border-neutral-200/50 dark:bg-neutral-800/50 p-5 rounded-2xl shadow-sm"
           >
             <div className="flex flex-col">
               <Tooltip
@@ -95,7 +95,7 @@ function HeroProjects() {
               {project.tags.map((tag, idx) => (
                 <Chip
                   key={idx}
-                  className="bg-blue-300/50 dark:bg-blue-700/50 text-blue-700 dark:text-blue-300"
+                  className="bg-neutral-300/50 dark:bg-neutral-700/50 text-neutral-700 dark:text-neutral-300"
                 >
                   {tag}
                 </Chip>

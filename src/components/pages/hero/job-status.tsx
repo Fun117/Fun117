@@ -50,7 +50,7 @@ function HeroJobStatus() {
 
   return (
     <div
-      className="flex flex-col sm:!flex-row flex-wrap justify-around items-center gap-5 bg-blue-500 container w-full p-5 sm:!p-10 mx-5 sm:!mx-10 rounded-lg shadow-lg"
+      className="flex flex-col sm:!flex-row flex-wrap justify-around items-center gap-5 bg-neutral-500 container w-full p-5 sm:!p-10 mx-5 sm:!mx-10 rounded-lg shadow-lg"
       ref={ref1}
       style={{
         transform: isInView1 ? "none" : "translateY(100px)",

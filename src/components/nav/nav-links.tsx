@@ -5,9 +5,14 @@ import config from "../../../richtpl.config";
 import { TLink } from "../ui/Tcomps";
 import { cn } from "@/lib/utils";
 
-function NavLinks({ isbg, nowPath }: { isbg?: boolean, nowPath?: string }) {
+function NavLinks({ isbg, nowPath }: { isbg?: boolean; nowPath?: string }) {
   return (
-    <div className={cn(`${!isbg && "bg-sky-500/20 shadow backdrop-blur"}`,"hidden lg:!flex p-1 rounded-full transition-all duration-300 ease-in-out")}>
+    <div
+      className={cn(
+        `${!isbg && "bg-neutral-500/20 shadow backdrop-blur"}`,
+        "hidden lg:!flex p-1 rounded-full transition-all duration-300 ease-in-out"
+      )}
+    >
       <div className="flex gap-1">
         {config.themeConfig.header?.items?.nav?.map((item, index) => {
           return (
@@ -21,7 +26,7 @@ function NavLinks({ isbg, nowPath }: { isbg?: boolean, nowPath?: string }) {
               className={cn(
                 `${
                   nowPath === item.to &&
-                  "bg-gradient-to-b from-blue-500 to-sky-500 border-sky-50 text-white"
+                  "bg-gradient-to-b from-neutral-500 to-gray-500 border-sky-50 text-white"
                 }`,
                 "border-transparent px-6 py-2 border rounded-full"
               )}
