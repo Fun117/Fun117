@@ -1,6 +1,8 @@
 "use client";
 
+import { Button } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import React from "react";
 
 function HeroTopContents() {
@@ -17,9 +19,11 @@ function HeroTopContents() {
         </h1>
         <p className="mb-5 md:!mb-10">{tp("description")}</p>
         <div className="flex flex-wrap gap-2 md:!gap-5">
-          <button className="max-w-1/2 bg-gradient-to-b from-blue-500 to-sky-500 text-white px-6 md:!px-8 py-2 rounded-full border border-blue-400 dark:border-blue-600 shadow-md shadow-blue-500/50">
-            {t("buttons.Request")}
-          </button>
+          <Link href="https://forms.gle/okPj49cvruieVURB7" target="_blank">
+            <Button className="max-w-1/2 px-6 md:!px-8 py-2" color="primary" radius="full" variant="shadow">
+              {t("buttons.Request")}
+            </Button>
+          </Link>
           <button className="max-w-1/2 rounded-full">
             {t("buttons.Learn More")}
           </button>

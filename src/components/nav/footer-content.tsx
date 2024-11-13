@@ -49,11 +49,15 @@ function Footer() {
           <h1 className="font-bold text-3xl sm:!text-4xl text-black dark:!text-white mb-5">
             Fun117
           </h1>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 mb-5">
             <p className="text-sm">{tl("role")}</p>
             <h1 className="text-lg sm:!text-xl text-black dark:!text-white">
               fun117.kun@gmail.com
             </h1>
+          </div>
+          <div className="flex gap-2 w-full">
+            <ModeToggle />
+            <LanguageSelest/>
           </div>
         </div>
         <div className="flex flex-wrap justify-start md:justify-end items-start gap-5 w-full">
@@ -90,14 +94,10 @@ function Footer() {
         </div>
       </div>
       <div className="flex flex-col md:!flex-row flex-wrap justify-around items-center gap-2 w-full p-5 border-t border-neutral-200 dark:!border-neutral-800">
-        <div className="flex gap-2">
+        <div className="flex gap-2 w-fit">
           <SocialButtons />
         </div>
         <p className="text-sm">{tl("footerText")}</p>
-        <div className="hidden md:!flex gap-2">
-          <ModeToggle />
-          <LanguageSelest />
-        </div>
       </div>
     </footer>
   );

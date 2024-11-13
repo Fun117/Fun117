@@ -44,10 +44,10 @@ function LanguageSelest() {
         asChild
       >
         <Button
-          variant="outline"
-          className="focus:hidden flex justify-start items-center"
+          variant="ghost"
+          className="flex justify-start items-center"
         >
-          <Globe className="w-5 h-5 mr-2" />
+          <Globe className="w-3 h-4 mr-1" />
           <span>
             {config.i18n.localeConfigs[lang || config.i18n.defaultLocale].label}
           </span>
