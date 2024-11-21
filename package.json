@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@lottiefiles/dotlottie-react": "^0.9.3",
+    "@lottiefiles/dotlottie-react": "^0.10.0",
     "@nextui-org/accordion": "^2.0.40",
     "@nextui-org/navbar": "^2.0.37",
     "@nextui-org/react": "^2.4.8",
