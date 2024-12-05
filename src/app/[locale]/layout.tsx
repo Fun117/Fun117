@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
+import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 // config
@@ -140,6 +141,8 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: LayoutProps;
 }) {
+  const gaId = process.env.GA_ID || "";
+
   const { locale } = await params;
   if (!config.i18n.locales.includes(locale as any)) {
     notFound();
@@ -173,6 +176,7 @@ export default async function LocaleLayout({
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId={gaId} />
     </html>
   );
 }
