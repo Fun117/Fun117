@@ -1,20 +1,9 @@
-// /src/middleware.ts
-
 import createMiddleware from "next-intl/middleware";
-import { locales, localePrefix, pathnames } from "@/components/provider/nav";
-
-import richtplConfig from "../richtpl.config";
 import { NextRequest, NextResponse } from "next/server";
+import { routing } from "./i18n/routing";
 
 // 既存のミドルウェアを作成
-const intlMiddleware = createMiddleware({
-  // A list of all locales that are supported
-  locales,
-  localePrefix,
-  pathnames,
-  // Used when no locale matches
-  defaultLocale: richtplConfig.i18n.defaultLocale,
-});
+const intlMiddleware = createMiddleware(routing);
 
 export function middleware(request: NextRequest) {
   // intlMiddleware を実行して、結果を取得
