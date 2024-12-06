@@ -35,7 +35,7 @@ function HeroDescription() {
   const isInView1 = useInView(ref1, { once: true });
 
   return (
-    <div id="description" className="w-full bg-blue-950">
+    <div id="description" className="w-full bg-neutral-950">
       <div className="container flex flex-col items-start max-w-[1024px] h-auto px-8 py-16 text-center mx-auto">
         <motion.h1
           ref={ref}

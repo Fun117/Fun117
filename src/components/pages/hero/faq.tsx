@@ -26,7 +26,7 @@ function HeroFAQ() {
   ];
 
   return (
-    <div className="w-full bg-blue-950">
+    <div className="w-full bg-neutral-900">
       <section
         id="faq"
         className="container max-w-[1024px] h-auto px-8 py-16 text-start mx-auto "

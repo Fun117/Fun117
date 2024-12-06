@@ -37,6 +37,8 @@
     "role": "フルスタック開発者",
     "footerText": "著作権 © 2024 Fun117. 無断複写・転載を禁じます",
     "items": {
+      "Home": "ホーム",
+      "About": "概要",
       "Resources": "リソース",
       "Docs": "ドキュメント",
       "Learn": "学ぶ",
@@ -60,6 +62,11 @@
     "Home": {
       "Metadata": {
         "title": "ホーム"
+      }
+    },
+    "About": {
+      "Metadata": {
+        "title": "概要"
       }
     },
     "Contacts": {
