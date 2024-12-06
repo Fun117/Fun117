@@ -3,15 +3,12 @@
 import React, { useRef } from "react";
 import {
   Button,
-  Chip,
-  Image,
   Link,
   Modal,
   ModalBody,
   ModalContent,
   ModalFooter,
   ModalHeader,
-  Tooltip,
   useDisclosure,
 } from "@nextui-org/react";
 import { motion, useInView } from "framer-motion";
@@ -47,13 +44,7 @@ type ProjectsProps = {
   tags: string[];
 };
 
-function ProjectCard({
-  index,
-  project,
-}: {
-  index: number;
-  project: ProjectsProps;
-}) {
+function ProjectCard({ project }: { project: ProjectsProps }) {
   const t = useTranslations("Pages.Hero.projects");
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
@@ -158,7 +149,7 @@ function HeroProjects() {
       className="container grid grid-cols-1 sm:!grid-cols-2 md:!grid-cols-3 max-w-[1024px] h-auto px-8 py-24 text-center mx-auto"
     >
       {projects.map((project, index) => {
-        return <ProjectCard key={index} index={index} project={project} />;
+        return <ProjectCard key={index} project={project} />;
       })}
     </section>
   );
