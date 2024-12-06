@@ -1,12 +1,12 @@
 // import NavContent from "@/components/nav/nav-content";
-import HeroDescription from "@/components/pages/hero/description";
-import HeroFAQ from "@/components/pages/hero/faq";
-import HeroTopContents from "@/components/pages/hero/top-contents";
-import Footer from "@/components/nav/footer-content";
-import HeroProjects from "@/components/pages/hero/projects";
+// import HeroDescription from "@/components/pages/hero/description";
+// import HeroProjects from "@/components/pages/hero/projects";
+// import HeroFAQ from "@/components/pages/hero/faq";
 
 import HeroUserCard from "@/components/pages/hero/userCard";
 import HeroJobStatus from "@/components/pages/hero/jobStatus";
+import HeroTopContents from "@/components/pages/hero/top-contents";
+import Footer from "@/components/nav/footer-content";
 
 export default async function Home() {
   return (
@@ -25,9 +25,9 @@ export default async function Home() {
         <HeroJobStatus />
         <HeroTopContents />
       </div>
-      <HeroDescription />
+      {/* <HeroDescription />
       <HeroProjects />
-      <HeroFAQ />
+      <HeroFAQ /> */}
       <Footer />
     </div>
   );

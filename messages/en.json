@@ -37,6 +37,8 @@
     "role": "FullStack Developer",
     "footerText": "Copyright © 2024 Fun117. All rights reserved.",
     "items": {
+      "Home": "Home",
+      "About": "About",
       "Resources": "Resources",
       "Docs": "Docs",
       "Learn": "Learn",
@@ -60,6 +62,11 @@
     "Home": {
       "Metadata": {
         "title": "Home"
+      }
+    },
+    "About": {
+      "Metadata": {
+        "title": "About"
       }
     },
     "Contacts": {

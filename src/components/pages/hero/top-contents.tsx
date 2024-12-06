@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useRef } from "react";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { motion, useInView } from "framer-motion";
+import { Link } from "@/i18n/routing";
 
 const variants = {
   visible: {
@@ -87,9 +87,11 @@ function HeroTopContents() {
               {t("buttons.Request")}
             </motion.button>
           </Link>
-          <button className="max-w-1/2 rounded-full">
-            {t("buttons.Learn More")}
-          </button>
+          <Link href="/about" className="flex items-center">
+            <motion.button className="rounded-full">
+              {t("buttons.Learn More")}
+            </motion.button>
+          </Link>
         </motion.div>
       </motion.div>
     </section>

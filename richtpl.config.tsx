@@ -113,6 +113,23 @@ const config: Config = {
       // Footer navigation items
       items: [
         {
+          title: "Link", // Title for the section
+          contents: [
+            {
+              label: "Home",
+              to: "/",
+              i18n_link: true,
+              i18n_text: true,
+            },
+            {
+              label: "About",
+              to: "/about",
+              i18n_link: true,
+              i18n_text: true,
+            },
+          ],
+        },
+        {
           title: "Projects", // Title for the section
           contents: [
             {
