@@ -1,10 +1,41 @@
 "use client";
 
 import React, { useRef } from "react";
-import { Chip, Image, Tooltip } from "@nextui-org/react";
+import {
+  Button,
+  Link,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  useDisclosure,
+} from "@nextui-org/react";
 import { motion, useInView } from "framer-motion";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
+
+const variants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.8,
+      delay: 0.5,
+      ease: "easeInOut",
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 30,
+    filter: "blur(10px)",
+    transition: {
+      duration: 0.8,
+      delay: 0.5,
+      ease: "easeInOut",
+    },
+  },
+};
 
 type ProjectsProps = {
   id: number;
@@ -13,12 +44,78 @@ type ProjectsProps = {
   tags: string[];
 };
 
-function HeroProjects() {
+function ProjectCard({ project }: { project: ProjectsProps }) {
   const t = useTranslations("Pages.Hero.projects");
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  const ref1 = useRef(null);
-  const isInView1 = useInView(ref1, { once: true, margin: "-110px" });
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
+  return (
+    <motion.div
+      id={`project-${t(`${project.id}.title`)}`}
+      className="col-span-1"
+      ref={ref}
+      variants={variants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+    >
+      <div className="flex text-start">
+        <div className="">
+          <img src={project.image} onClick={onOpen} />
+        </div>
+      </div>
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        scrollBehavior="inside"
+        motionProps={{
+          variants: {
+            enter: {
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.3,
+                ease: "easeOut",
+              },
+            },
+            exit: {
+              y: -20,
+              opacity: 0,
+              transition: {
+                duration: 0.2,
+                ease: "easeIn",
+              },
+            },
+          },
+        }}
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">
+                <Link href={project.link} showAnchorIcon isExternal>
+                  {t(`${project.id}.title`)}
+                </Link>
+              </ModalHeader>
+              <ModalBody>
+                <img src={project.image} />
+                <p>{t(`${project.id}.description`)}</p>
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+    </motion.div>
+  );
+}
+
+function HeroProjects() {
   const projects: ProjectsProps[] = [
     {
       id: 1,
@@ -35,76 +132,26 @@ function HeroProjects() {
     {
       id: 3,
       image: "/wp-content/projects/scratch-building/ja-dark-fullscreen.png",
-      link: "https://scratch-building.vercel.app/",
+      link: "https://scratch-building.vercel.app",
       tags: ["Next.js", "TypeScript", "Website", "Scratch"],
+    },
+    {
+      id: 4,
+      image: "/wp-content/projects/craftrecycle/ja-dark-fullscreen.png",
+      link: "https://craftrecycle.fun117.dev",
+      tags: ["Next.js", "TypeScript", "Website", "Minecraft", "DataPack"],
     },
   ];
 
   return (
-    <motion.div
-      className="container w-full p-5 sm:!p-10 sm:!mx-10"
-      ref={ref1}
-      style={{
-        transform: isInView1 ? "none" : "translateY(100px)",
-        opacity: isInView1 ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      }}
+    <section
+      id="projects"
+      className="container grid grid-cols-1 sm:!grid-cols-2 md:!grid-cols-3 max-w-[1024px] h-auto px-8 py-24 text-center mx-auto"
     >
-      {/* Animate the entire list based on isInView1 */}
-      <motion.ul
-        className="grid grid-cols-1 sm:!grid-cols-2 md:!grid-cols-3 gap-4 w-full"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: isInView1 ? 1 : 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        {projects.map((project, index) => (
-          <motion.li
-            key={project.id}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: index * 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
-            }}
-            className="flex flex-col justify-between items-start bg-neutral-50 dark:bg-neutral-900 border border-neutral-200/50 dark:bg-neutral-800/50 p-5 rounded-2xl shadow-sm"
-          >
-            <div className="flex flex-col">
-              <Tooltip
-                showArrow={true}
-                content={`${project.link.substring(0, 40)}...`}
-              >
-                <Link href={project.link} target="_blank" className="mb-3">
-                  <Image
-                    className="rounded-2xl"
-                    src={project.image}
-                    alt={t(`${project.id}.title`)}
-                  />
-                </Link>
-              </Tooltip>
-              <div className="flex flex-col mb-3">
-                <h1 className="font-semibold text-3xl mb-2">
-                  {t(`${project.id}.title`)}
-                </h1>
-                <p className="text-sm text-neutral-500">
-                  {t(`${project.id}.description`)}
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-wrap gap-1">
-              {project.tags.map((tag, idx) => (
-                <Chip
-                  key={idx}
-                  className="bg-neutral-300/50 dark:bg-neutral-700/50 text-neutral-700 dark:text-neutral-300"
-                >
-                  {tag}
-                </Chip>
-              ))}
-            </div>
-          </motion.li>
-        ))}
-      </motion.ul>
-    </motion.div>
+      {projects.map((project, index) => {
+        return <ProjectCard key={index} project={project} />;
+      })}
+    </section>
   );
 }
 

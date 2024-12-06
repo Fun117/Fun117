@@ -26,18 +26,8 @@ export default async function Home() {
         <HeroTopContents />
       </div>
       <HeroDescription />
-      <section
-        id="projects"
-        className="flex justify-center items-center w-full mt-5 sm:!pt-10"
-      >
-        <HeroProjects />
-      </section>
-      <section
-        id="faq"
-        className="flex justify-center items-center w-full mt-5 sm:!pt-10"
-      >
-        <HeroFAQ />
-      </section>
+      <HeroProjects />
+      <HeroFAQ />
       <Footer />
     </div>
   );

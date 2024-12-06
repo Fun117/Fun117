@@ -79,7 +79,7 @@ function HeroJobStatus() {
   }, []);
 
   return (
-    <div id="job-status" className="container flex flex-col items-start max-w-[1024px] h-auto overflow-y-auto px-8 mx-auto mb-20">
+    <div id="job-status" className="container flex flex-col items-start max-w-[1024px] h-auto px-8 mx-auto mb-20">
       <motion.div
         ref={ref}
         variants={variants}

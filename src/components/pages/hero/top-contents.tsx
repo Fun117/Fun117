@@ -43,7 +43,7 @@ function HeroTopContents() {
   return (
     <section
       id="hero-top"
-      className="container flex flex-col items-start max-w-[1024px] h-auto overflow-y-auto px-8 mx-auto"
+      className="container flex flex-col items-start max-w-[1024px] h-auto px-8 mx-auto"
     >
       <motion.div
         ref={ref0}
