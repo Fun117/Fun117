@@ -12,15 +12,9 @@ import config from "../../../richtpl.config";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 
-// next-theme
-import { ThemeProvider } from "next-themes";
-
-// ui
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { CustomCursor } from "@/components/ui/mouse-pointer";
-import TopFooterContents from "@/components/pages/topfootercontents";
 
 export type LayoutProps = {
   locale: string;
