@@ -12,11 +12,6 @@ import config from "../../../richtpl.config";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 
-// next-theme
-import { ThemeProvider } from "next-themes";
-
-// ui
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { CustomCursor } from "@/components/ui/mouse-pointer";
@@ -153,29 +148,15 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning className="dark">
+    <html lang={locale} suppressHydrationWarning className="bg-white">
       <body
         className={`${inter.className} relative w-full h-full min-h-dvh overflow-x-clip`}
         suppressHydrationWarning
       >
-        <ThemeProvider
-          attribute="class"
-          themes={["dark"]}
-          // defaultTheme={config.themeConfig.colorMode.defaultMode}
-          // enableSystem
-          // disableTransitionOnChange
-        >
-          <NextIntlClientProvider messages={messages}>
-            <TooltipProvider>
-              {/* <Header /> */}
-              <main className="w-full h-full min-h-[calc(100dvh-64px)]">
-                {children}
-              </main>
-              {/* <Footer /> */}
-            </TooltipProvider>
-            <CustomCursor />
-          </NextIntlClientProvider>
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+          <CustomCursor />
+        </NextIntlClientProvider>
       </body>
       <GoogleAnalytics gaId={gaId} />
     </html>

@@ -121,5 +121,8 @@
   "buttons": {
     "Request": "依頼する",
     "Learn More": "もっと詳しく"
+  },
+  "footer": {
+    "footerText": "著作権 © 2024 Fun117. 無断複写・転載を禁じます"
   }
 }

@@ -1,11 +1,13 @@
 import { useTranslations } from "next-intl";
 
-import type { Metadata } from "next";
 import NotFound from "@/components/pages/not-found";
+import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Page not found",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "404",
+  };
+}
 
 export default function NotFoundPage() {
   const t = useTranslations("PageNotFound");
