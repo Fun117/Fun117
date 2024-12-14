@@ -1,26 +1,31 @@
 "use client";
 
+import TopFooterContents from "@/components/pages/topfootercontents";
 import React from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
-const variants = {
-  hidden: { opacity: 0 },
-  enter: { opacity: 1 },
-};
+// const variants = {
+//   hidden: { opacity: 0 },
+//   enter: { opacity: 1 },
+// };
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
-    <motion.div
-      className="w-full h-full min-h-[calc(100dvh-64px)]"
-      variants={variants}
-      initial="hidden"
-      animate="enter"
-      transition={{
-        type: "linear",
-        duration: 2,
-      }}
-    >
+    // <motion.main
+    //   className="w-full h-full min-h-dvh"
+    //   variants={variants}
+    //   initial="hidden"
+    //   animate="enter"
+    //   transition={{
+    //     type: "linear",
+    //     duration: 1,
+    //   }}
+    // >
+    //   {children}
+    // </motion.main>
+    <main className="w-full h-full">
       {children}
-    </motion.div>
+      <TopFooterContents />
+    </main>
   );
 }

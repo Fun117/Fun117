@@ -48,7 +48,7 @@ const config: Config = {
   themeConfig: {
     // Color mode settings
     colorMode: {
-      defaultMode: "dark", // Default color mode (light, dark, or system)
+      defaultMode: "light", // Default color mode (light, dark, or system)
       selectSwitch: false, // Whether to allow switching color modes
     },
     image: "/wp-content/fun117/new/rounded/400x400.png",
