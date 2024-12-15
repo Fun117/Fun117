@@ -32,6 +32,18 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none !important;
+  border: none !important;
+}
+:focus-visible {
+  box-shadow: none !important;
+}
+
 .index-Keyvisual {
   position: relative;
   width: 100%;

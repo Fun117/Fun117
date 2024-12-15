@@ -15,6 +15,8 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { CustomCursor } from "@/components/ui/mouse-pointer";
+import { Provider } from "@/components/ui/provider";
+import { Toaster } from "@/components/ui/toaster";
 
 export type LayoutProps = {
   locale: string;
@@ -154,7 +156,10 @@ export default async function LocaleLayout({
         suppressHydrationWarning
       >
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <Provider>
+            {children}
+            <Toaster />
+          </Provider>
           <CustomCursor />
         </NextIntlClientProvider>
       </body>

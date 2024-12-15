@@ -6,6 +6,7 @@ import { Link, usePathname } from "@/i18n/routing";
 import { motion, useInView } from "framer-motion";
 import { IconType } from "react-icons";
 import { FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
+import { LocaleSelect } from "../ui/localeselect";
 
 function NavLi({ children }: { children: React.ReactNode }) {
   const variants = {
@@ -105,7 +106,7 @@ function TopFooterContents() {
   return (
     <footer
       id="top-footer-contents"
-      className="relative mt-[3.90625vw] lg:!mt-[90px] pt-[90px] pb-[30px]"
+      className="relative bg-[#eef7ff] mt-[3.90625vw] lg:!mt-[90px] pt-[90px] pb-[30px] before:absolute before:-top-[2.73438vw] lg:!before:-top-[21] before:w-full before:h-[2.86458vw] lg:!before:h-[22px] before:bg-[url(/wp-content/themes/images/common/bg_footer.svg)] before:bg-bottom before:bg-auto before:bg-repeat-x"
     >
       <div className="w-[63.54167vw] lg:!w-[clamp(100px,90%,1200px)] mx-auto">
         <motion.nav
@@ -127,14 +128,14 @@ function TopFooterContents() {
                       isNow ? "text-[#1abbde]" : "text-[#071828]"
                     }`}
                   >
-                    {item.label}
+                    {t(`links.${item.label}`)}
                   </Link>
                 </NavLi>
               );
             })}
           </motion.ul>
         </motion.nav>
-        <div className="relative flex justify-center items-center max-w-[534px] mx-auto my-[65px] border-y-2 border-neutral-100 py-5">
+        <div className="relative flex justify-center items-center max-w-[534px] mx-auto my-[65px] border-y-2 border-white py-5">
           <h1 className="flex text-[3.38542vw] lg:!text-base mr-[4.6875vw] font-bold text-[#071828] tracking-[.2rem] uppercase lg:!mr-[35px]">
             official
           </h1>
@@ -154,6 +155,9 @@ function TopFooterContents() {
               );
             })}
           </ul>
+        </div>
+        <div className="relative flex justify-center items-center max-w-[534px] mx-auto border-y-2 border-white py-5">
+          <LocaleSelect />
         </div>
       </div>
       <p className="text-xs text-center text-[#7a98c9]">{t("footerText")}</p>
