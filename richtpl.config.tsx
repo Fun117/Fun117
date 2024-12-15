@@ -1,5 +1,4 @@
 import Config from "@/types/richtpl.config";
-import { Book, BookUser, Home } from "lucide-react";
 
 /**
  * Site configuration object.

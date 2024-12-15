@@ -1,19 +1,38 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
 
-export default function NotFound({ title }: { title: string }) {
-  console.log(title);
+export default function NotFound() {
+  const t = useTranslations("pages.notfound");
+
   return (
     <>
       <div className="pt-[134px]">
-        <h1 className="text-6xl text-center font-bold uppercase bg-clip-text text-transparent bg-gradient-to-b from-[#071827] to-[#1464ae]">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.5,
+            duration: 1,
+          }}
+          className="text-6xl text-center font-bold uppercase bg-clip-text text-transparent bg-gradient-to-b from-[#071827] to-[#1464ae]"
+        >
           404
-        </h1>
+        </motion.h1>
       </div>
-      <div className="flex flex-col justify-center items-center w-[clamp(100px,90%,1200px)] mt-[138px] mx-auto">
-        <h1 className="text-5xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-b from-[#071827] to-[#1464ae]">
-          page not found
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.5,
+          duration: 1,
+        }}
+        className="flex flex-col justify-center items-center w-[clamp(100px,90%,1200px)] mt-[138px] mx-auto"
+      >
+        <h1 className="text-5xl font-bold uppercase text-center bg-clip-text text-transparent bg-gradient-to-b from-[#071827] to-[#1464ae]">
+          {t("title")}
         </h1>
         <Link
           href="/"
@@ -21,7 +40,8 @@ export default function NotFound({ title }: { title: string }) {
         >
           home
         </Link>
-      </div>
+        <div className="mb-10" />
+      </motion.div>
     </>
   );
 }
