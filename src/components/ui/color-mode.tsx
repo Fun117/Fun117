@@ -16,7 +16,7 @@ export interface ColorModeProviderProps extends ThemeProviderProps {}
 // }
 
 export function ColorModeProvider(props: ColorModeProviderProps) {
-  return <ThemeProvider attribute="class" defaultTheme="light" themes={["light"]} {...props} />;
+  return <ThemeProvider attribute="class" forcedTheme="light" defaultTheme="light" themes={["light"]} {...props} />;
 }
 
 export function useColorMode() {
