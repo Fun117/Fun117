@@ -13,6 +13,7 @@ import {
   CustomFormErrorMessage,
   CustomFormInput,
   CustomFormLabel,
+  CustomFormTextarea,
 } from "./formcontent";
 import { useState } from "react";
 import { toaster } from "@/components/ui/toaster";
@@ -170,7 +171,7 @@ export function ContactPageFormContent() {
               <CustomFormDt>{t("form.fields.message")}*</CustomFormDt>
               <dd className="grow">
                 <span className="relative">
-                  <CustomFormInput
+                  <CustomFormTextarea
                     id="message"
                     type="text"
                     {...register("message")}
