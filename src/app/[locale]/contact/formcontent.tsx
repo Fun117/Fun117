@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Input, InputProps } from "@chakra-ui/react";
+import { Input, InputProps, Textarea } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
 
 export function CustomFormLabel({
@@ -47,6 +47,27 @@ const CustomFormInput = React.forwardRef<
 });
 CustomFormInput.displayName = "CustomFormInput";
 export { CustomFormInput };
+
+export interface CustomFormTextareaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
+
+const CustomFormTextarea = React.forwardRef<
+  HTMLTextAreaElement,
+  CustomFormTextareaProps & InputProps
+>(({ className, size, ...props }, ref) => {
+  return (
+    <Textarea
+      ref={ref}
+      className={cn(
+        "text-[3.38542vw] lg:!text-base text-[#071828] w-full h-fit py-[1.5625vw] px-[2.34375vw] lg:!py-[18px] lg:!px-[15px] bg-white border lg:!border-2 border-[#dbe9f5] rounded-[1.30208vw] lg:!rounded-[10px]",
+        className
+      )}
+      {...props}
+    />
+  );
+});
+CustomFormTextarea.displayName = "CustomFormTextarea";
+export { CustomFormTextarea };
 
 export function CustomFormErrorMessage({ children }: { children: ReactNode }) {
   return (
