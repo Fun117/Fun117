@@ -65,17 +65,17 @@ function TopFooterContents() {
   }[] = [
     {
       label: "GitHub",
-      url: "https://i.fun117.dev/github",
+      url: "https://l.toakiryu.com/github",
       icon: FaGithub,
     },
     {
       label: "X",
-      url: "https://i.fun117.dev/x",
+      url: "https://l.toakiryu.com/x",
       icon: FaTwitter,
     },
     {
       label: "Youtube",
-      url: "https://i.fun117.dev/youtube",
+      url: "https://l.toakiryu.com/youtube",
       icon: FaYoutube,
     },
   ];
