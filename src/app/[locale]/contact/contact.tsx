@@ -174,6 +174,7 @@ export function ContactPageFormContent() {
                   <CustomFormTextarea
                     id="message"
                     type="text"
+                    className="resize-y h-full min-h-[15vw] max-h-[50vw] field-sizing-content"
                     {...register("message")}
                   />
                   {errors.message && (

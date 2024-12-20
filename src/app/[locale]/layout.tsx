@@ -151,6 +151,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning className="bg-white">
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+      </head>
       <body
         className={`${inter.className} relative w-full h-full min-h-dvh overflow-x-clip`}
         suppressHydrationWarning
