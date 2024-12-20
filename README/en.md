@@ -16,14 +16,14 @@
 <h1 align="center">
   <img src="https://avatars.githubusercontent.com/u/141471450?s=400&u=d41619c3703941f545528e6928c3e5cdf64f327e&v=4" alt="toakiryu logo" width="96px"/>
   
-  [👋 Hi! I'm Toa Kiryu](https://fun117.dev)
+  [👋 Hi! I'm Toa Kiryu](https://toakiryu.com)
   
   <div>
     <a href="https://github.com/toakiryu?tab=followers">
       <img alt="GitHub followers" src="https://img.shields.io/github/followers/toakiryu">
     </a>
     <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/toakiryu">
-    <a href="https://twitter.com/Fun_117">
+    <a href="https://x.com/toakiryu">
       <img alt="X (formerly Twitter) Follow" src="https://img.shields.io/twitter/follow/toakiryu">
     </a>
     <!-- <a href="https://www.youtube.com/channel/UCT34DhsVlYoyV8Y4c-MTTrQ">
@@ -55,8 +55,8 @@
 
 ### 📫 How to reach me:
 
-[![Email][gmail-img]](mailto:toakiryu.kun@gmail.com)
-[![Twitter(x)][twitter-img]](https://twitter.com/Fun_117)
+[![Email][gmail-img]](https://toakiryu.com/contact)
+[![Twitter(x)][twitter-img]](https://twitter.com/toakiryu)
 
 ### 🌱 I’m currently learning
 
@@ -69,9 +69,9 @@
 [![NPM][npm-img]](https://www.npmjs.com/~toakiryu)
 [![Discord][discord-img]](https://discord.com/users/990984460365365258)
 [![Youtube][youtube-img]](https://www.youtube.com/channel/UCT34DhsVlYoyV8Y4c-MTTrQ)
-[![Twitter(x)][twitter-img]](https://twitter.com/Fun_117)
+[![Twitter(x)][twitter-img]](https://twitter.com/toakiryu)
 [![Scratch][scratch-img]](https://scratch.mit.edu/users/Fun_117/)
-[![Minecraft][minecraft-img]](https://ja.namemc.com/profile/toakiryu.1)
+[![Minecraft][minecraft-img]](https://ja.namemc.com/profile/fun117.1)
 
 <p align="center">
   <picture>

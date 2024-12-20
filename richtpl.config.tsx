@@ -6,20 +6,17 @@ import Config from "@/types/richtpl.config";
  */
 const config: Config = {
   // Tagline for the site
-  tagline: "Fun117",
-
-  // URL to the favicon
-  favicon: "/wp-content/fun117/new/rounded/256x256.ico",
+  tagline: "Toa Kiryu",
 
   // Production URL of the site
-  url: "https://fun117.dev",
+  url: "https://toakiryu.com",
 
   // Base URL pathname (for GitHub Pages deployment)
   baseUrl: "/",
 
   // GitHub deployment configuration
-  organizationName: "fun117", // GitHub organization/user name
-  projectName: "fun117", // GitHub repository name
+  organizationName: "toakiryu", // GitHub organization/user name
+  projectName: "toakiryu", // GitHub repository name
 
   // Internationalization (i18n) configuration
   i18n: {
@@ -50,7 +47,7 @@ const config: Config = {
       defaultMode: "light", // Default color mode (light, dark, or system)
       selectSwitch: false, // Whether to allow switching color modes
     },
-    image: "/wp-content/fun117/new/rounded/400x400.png",
+    image: "/wp-content/toakiryu/icon_256x256.png",
     // Metadata for the site
     metadata: {
       keywords: [
@@ -61,16 +58,16 @@ const config: Config = {
         "developer",
         "software engineer",
       ],
-      authors: { name: "Fun117", url: "https://fun117.dev" },
+      authors: { name: "Fun117", url: "https://toakiryu.com" },
       creator: "Fun117",
       icons: {
-        icon: "/wp-content/fun117/new/rounded/256x256.ico",
-        apple: "/wp-content/fun117/new/rounded/400x400.png",
+        icon: "/wp-content/toakiryu/icon_256x256.ico",
+        apple: "/wp-content/toakiryu/icon_256x256.png",
       },
       generator: "Next.js",
       publisher: "Vercel",
       robots: "follow, index",
-      metadataBase: new URL("https://fun117.dev"),
+      metadataBase: new URL("https://toakiryu.com"),
     },
     // Header configuration
     header: {
