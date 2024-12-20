@@ -30,7 +30,7 @@ function NavLi({ children }: { children: React.ReactNode }) {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="flex items-center w-[40%] lg:!w-fit lg:!mx-5"
+      className="flex items-center w-fit lg:!mx-5"
     >
       {children}
     </motion.li>
@@ -116,7 +116,7 @@ function TopFooterContents() {
         >
           <motion.ul
             variants={variants}
-            className="flex flex-wrap justify-between lg:justify-center items-center"
+            className="flex flex-wrap justify-between lg:justify-center items-center gap-2"
           >
             {links.map((item, index) => {
               const isNow = pathname === item.link;
@@ -124,7 +124,7 @@ function TopFooterContents() {
                 <NavLi key={index}>
                   <Link
                     href={item.link}
-                    className={`font-bold text-sm lg:!text-xl uppercase ${
+                    className={`font-bold text-sm sm:!text-base md:!text-lg lg:!text-xl uppercase ${
                       isNow ? "text-[#1abbde]" : "text-[#071828]"
                     }`}
                   >
@@ -156,7 +156,7 @@ function TopFooterContents() {
             })}
           </ul>
         </div>
-        <div className="relative flex justify-center items-center max-w-[534px] mx-auto border-y-2 border-white py-5">
+        <div className="relative flex justify-center items-center max-w-[534px] mx-auto mb-[65px] border-y-2 border-white py-5">
           <LocaleSelect />
         </div>
       </div>
