@@ -1,12 +1,6 @@
 "use client";
 
-import React, {
-  ReactNode,
-  useEffect,
-  useId,
-  useRef,
-  useState,
-} from "react";
+import React, { ReactNode, useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { cn } from "@/lib/utils";

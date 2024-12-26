@@ -8,6 +8,7 @@ import { FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import BorderSocialButtons from "./borderSocialButtons";
+import { useTranslations } from "next-intl";
 
 function AnimateContentDiv({ children }: { children: ReactNode }) {
   const ref = useRef(null);
@@ -47,6 +48,7 @@ function AnimateContentDiv({ children }: { children: ReactNode }) {
 }
 
 function HeroAboutMeContent() {
+  const t = useTranslations("pages.home.about");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -82,31 +84,22 @@ function HeroAboutMeContent() {
           className="flex flex-col justify-center items-center text-center"
         >
           <h1 className="font-bold text-xl sm:!text-2xl md:!text-3xl lg:!text-4xl">
-            僕について
+            {t("title")}
           </h1>
-          <p className="max-w-[80%] mt-5">
-            日本在住の学生で、小学生の頃から趣味でプログラミングをはじめた。初めの頃は
-            HTML と CSS を使った静的サイトを制作していたけど、現在はトレンドの
-            React を使ってウェブサイトなどを制作している。好きな言語は、
-            TypeScript で、好きなフレームワークは Next.js
-          </p>
+          <p className="max-w-[80%] mt-5">{t("description")}</p>
         </motion.div>
         <div className="grid grid-cols-1 md:!grid-cols-3 gap-5 mt-10">
           <AnimateContentDiv>
             <FaReact className="text-5xl text-sky-500" />
-            <p className="max-w-xs mt-5">
-              Web とネイティブユーザインターフェースのためのライブラリ
-            </p>
+            <p className="max-w-xs mt-5">{t("items.react")}</p>
           </AnimateContentDiv>
           <AnimateContentDiv>
             <SiTypescript className="text-5xl bg-white text-blue-500 rounded-lg" />
-            <p className="max-w-xs mt-5">
-              JavaScriptのスーパーセットとなるプログラミング言語
-            </p>
+            <p className="max-w-xs mt-5">{t("items.typescript")}</p>
           </AnimateContentDiv>
           <AnimateContentDiv>
             <RiNextjsFill className="text-5xl text-black bg-white rounded-full" />
-            <p className="max-w-xs mt-5">Web 向けReact フレームワーク</p>
+            <p className="max-w-xs mt-5">{t("items.nextjs")}</p>
           </AnimateContentDiv>
         </div>
         <BorderSocialButtons />

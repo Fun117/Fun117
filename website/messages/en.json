@@ -12,6 +12,7 @@
     "locale": "{locale, select, ja {🇯🇵 日本語} en {🇺🇸 English} other {Unknown}}"
   },
   "footer": {
+    "description": "Toa Kiryu Official Website",
     "copyright": "Copyright © 2024 Toa Kiryu. All rights reserved.",
     "items": {
       "website": {
@@ -50,9 +51,33 @@
       "title": "Unknown error",
       "retry": "Retry"
     },
+    "home": {
+      "avatarContent": {
+        "name": "Toa Kiryu",
+        "description": "I build beautiful products using the latest technologies and frameworks.I am a developer who is passionate about building great products."
+      },
+      "about": {
+        "title": "About Me",
+        "description": "I am a student living in Japan who started programming as a hobby in elementary school. Initially, I created static websites using HTML and CSS, but now I develop websites and other projects using the trending React. My favorite programming language is TypeScript, and my favorite framework is Next.js.",
+        "items": {
+          "react": "A library for building user interfaces for web and native applications",
+          "typescript": "A programming language that is a superset of JavaScript",
+          "nextjs": "A React framework for web development"
+        }
+      },
+      "serverWorldMap": {
+        "title": "Using {service}",
+        "description": "Hosting websites from servers around the world using a cloud hosting service."
+      }
+    },
     "projects": {
       "metadata": {
         "title": "Projects"
+      },
+      "titleContent": {
+        "title1": "Toa Kiryu",
+        "title2": "Project History",
+        "description": "This is the project overview page of Toa Kiryu. This list does not necessarily include all the projects created or contributed to."
       }
     },
     "contact": {

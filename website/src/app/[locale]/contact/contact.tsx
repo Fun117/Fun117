@@ -66,7 +66,8 @@ export function ContactPageFormContent() {
 
   const onSubmit = async (data: ContactFormValues) => {
     setIsLoading(true);
-    const promise = GFromQuickSubmitFormPOST({
+    const promise = toast.loading(t("form.loading.title"));
+    const res = await GFromQuickSubmitFormPOST({
       data: [
         {
           key: "1037971436",
@@ -86,16 +87,16 @@ export function ContactPageFormContent() {
         },
       ],
     });
-    toast.promise(promise, {
-      success: t("form.success.title"),
-      error: t("form.error.title"),
-      loading: t("form.loading.title"),
-    });
-    if (!!promise) {
+
+    if (res.success) {
+      toast.success(t("form.success.title"), { id: promise });
       setIsFormState(true);
-      setIsLoading(false);
       reset();
+    } else {
+      toast.error(t("form.error.title"), { id: promise });
+      console.log(res.error);
     }
+    setIsLoading(false);
   };
 
   if (isFormState) {
