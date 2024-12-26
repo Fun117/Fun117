@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "title": "Toa Kiryu",
+    "description": "Official Website"
+  },
+  "colorModeSwitcher": {
+    "label": "Change theme",
+    "color": "{color, select, light  {Light} dark {Dark} system {System} other {Unknown}}"
+  },
+  "localeSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ja {🇯🇵 日本語} en {🇺🇸 English} other {Unknown}}"
+  },
+  "footer": {
+    "copyright": "Copyright © 2024 Toa Kiryu. All rights reserved.",
+    "items": {
+      "website": {
+        "label": "Website",
+        "links": {
+          "home": "Home",
+          "projects": "Projects",
+          "contact": "Contact"
+        }
+      },
+      "projects": {
+        "label": "Projects",
+        "links": {
+          "craftrecycle": "Craft Recycle",
+          "gform-quick-submit": "GForm Quick Submit",
+          "nextjs-rich-tpl": "Next.js Rich Tpl",
+          "safe-encode": "Safe Encode",
+          "scpay": "ScPay",
+          "scratch-building": "Scratch Building",
+          "scratch-status": "Scratch Status",
+          "support-scripts": "Support Scripts",
+          "vspodb": "VspoDB",
+          "zshmgr": "Zshmgr"
+        }
+      }
+    }
+  },
+  "pages": {
+    "notfound": {
+      "metadata": {
+        "title": "404"
+      },
+      "title": "Page Not Found"
+    },
+    "error": {
+      "title": "Unknown error",
+      "retry": "Retry"
+    },
+    "projects": {
+      "metadata": {
+        "title": "Projects"
+      }
+    },
+    "contact": {
+      "metadata": {
+        "title": "Contact"
+      },
+      "attention": {
+        "title": "Attention",
+        "listItems": {
+          "1": "The personal information you provide will be used to respond to your inquiries and provide information.",
+          "2": "If personal information is not entered correctly or depending on the content of your inquiry, we may not be able to respond.",
+          "3": "Depending on the content of your inquiry, it may take some time to respond."
+        }
+      },
+      "form": {
+        "fields": {
+          "company": "Company (Optional)",
+          "name": "Name",
+          "email": "Email Address",
+          "message": "Message"
+        },
+        "errors": {
+          "nameRequired": "Please enter your name",
+          "emailInvalid": "Please enter a valid email address",
+          "messageRequired": "Please enter a message"
+        },
+        "success": {
+          "title": "Submission Successful!",
+          "description": "Your form has been submitted successfully."
+        },
+        "error": {
+          "title": "Submission Failed!",
+          "description": "There was an error submitting your form."
+        },
+        "loading": {
+          "title": "Submitting...",
+          "description": "Your form is being submitted."
+        },
+        "submittedMessage": "Your form has been submitted.",
+        "newFormButton": "Open a New Form",
+        "submitButton": "Submit",
+        "loadingButton": "Submitting..."
+      }
+    }
+  }
+}
