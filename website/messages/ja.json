@@ -12,6 +12,7 @@
     "locale": "{locale, select, ja {🇯🇵 日本語} en {🇺🇸 English} other {Unknown}}"
   },
   "footer": {
+    "description": "桐生トア公式ウェブサイト",
     "copyright": "著作権 © 2024 桐生トア. 無断複写・転載を禁じます",
     "items": {
       "website": {
@@ -50,10 +51,33 @@
       "title": "不明なエラーが発生",
       "retry": "リトライ"
     },
-    "home": {},
+    "home": {
+      "avatarContent": {
+        "name": "桐生トア",
+        "description": "私は最新のテクノロジーとフレームワークを使用して美しい製品を構築します。私は素晴らしい製品を構築することに情熱を傾ける開発者です。"
+      },
+      "about": {
+        "title": "僕について",
+        "description": "日本在住の学生で、小学生の頃から趣味でプログラミングをはじめた。初めの頃は HTML と CSS を使った静的サイトを制作していたけど、現在はトレンドの React を使ってウェブサイトなどを制作している。好きな言語は、TypeScript で、好きなフレームワークは Next.js",
+        "items": {
+          "react": "Web とネイティブユーザインターフェースのためのライブラリ",
+          "typescript": "JavaScriptのスーパーセットとなるプログラミング言語",
+          "nextjs": "Web 向けReact フレームワーク"
+        }
+      },
+      "serverWorldMap": {
+        "title": "{service} を使用しています",
+        "description": "クラウドホスティングサービスを使用して世界各地のサーバーからウェブサイトをホスティングしています。"
+      }
+    },
     "projects": {
       "metadata": {
         "title": "プロジェクト"
+      },
+      "titleContent": {
+        "title1": "桐生トア",
+        "title2": "プロジェクト履歴",
+        "description": "桐生トアのプロジェクト概要ページです。このリストは、制作,貢献したプロジェクトが必ず含まれるとは限りません。"
       }
     },
     "contact": {

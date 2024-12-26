@@ -20,12 +20,12 @@ export type FooterNavItemType = {
 function Footer() {
   const t = useTranslations("footer");
 
-  const returnTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  // const returnTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   const links: FooterNavItemType[] = [
     {
@@ -99,7 +99,7 @@ function Footer() {
           <div className="mb-10">
             <Image src="/wp-content/toakiryu/icon.png" className="w-10 h-10" />
             <div className="mt-5">
-              <p>桐生トア公式ウェブサイト</p>
+              <p>{t("description")}</p>
             </div>
             <div className="flex flex-wrap gap-3 mt-5">
               {socials.map((social, index) => {
@@ -136,8 +136,7 @@ function Footer() {
                           <Link
                             href={item.href}
                             target={isSiteUrl ? "_self" : "_blank"}
-                            className="opacity-70"
-                            onClick={returnTop}
+                            className="opacity-70 hover:!opacity-50 transition-all duration-300 ease-in-out"
                           >
                             {t(`items.${link.label}.links.${item.label}`)}
                           </Link>

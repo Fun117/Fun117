@@ -8,6 +8,7 @@ import {
   MotionValue,
 } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "use-intl";
 
 export const HeroParallax = ({
   products,
@@ -93,6 +94,7 @@ export const HeroParallax = ({
 };
 
 export const Header = () => {
+  const t = useTranslations("pages.home.avatarContent");
   return (
     <div className="max-w-7xl relative left-0 top-0 flex flex-col md:!flex-row-reverse mx-auto py-20 md:py-40 px-4 w-full">
       <div className="flex justify-center items-center md:!w-1/2 mb-10 md:!mb-0">
@@ -104,11 +106,10 @@ export const Header = () => {
       </div>
       <div className="md:!w-1/2">
         <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-          桐生トア <br /> full stack developer
+          {t("name")} <br /> full stack developer
         </h1>
         <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-          私は最新のテクノロジーとフレームワークを使用して美しい製品を構築します。
-          私は素晴らしい製品を構築することに情熱を傾ける開発者です。
+          {t("description")}
         </p>
       </div>
     </div>
