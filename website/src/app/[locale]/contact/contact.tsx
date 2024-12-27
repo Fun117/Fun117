@@ -129,10 +129,10 @@ export function ContactPageFormContent() {
         className="pt-[5.20833vw] px-[2.60417vw] pb-[10.41667vw] lg:!pt-[40px] lg:!px-[120px] lg:!pb-[80px] mt-[7.8125vw] lg:!mt-[40px] bg-white dark:bg-black shadow-[0_16px_32px_rgba(207,221,234,.34)]"
       >
         <div className="mt-[5.20833vw] lg:!mt-[40px] border-t">
-          <dl>
+          <div>
             <CustomFormLabel htmlFor="company">
               <CustomFormDt>{t("form.fields.company")}</CustomFormDt>
-              <dd className="grow">
+              <div className="grow">
                 <span className="relative">
                   <CustomFormInput
                     id="company"
@@ -141,13 +141,13 @@ export function ContactPageFormContent() {
                     {...register("company")}
                   />
                 </span>
-              </dd>
+              </div>
             </CustomFormLabel>
-          </dl>
-          <dl>
+          </div>
+          <div>
             <CustomFormLabel htmlFor="name">
               <CustomFormDt>{t("form.fields.name")}*</CustomFormDt>
-              <dd className="grow">
+              <div className="grow">
                 <span className="relative">
                   <CustomFormInput
                     id="name"
@@ -162,13 +162,13 @@ export function ContactPageFormContent() {
                     </CustomFormErrorMessage>
                   )}
                 </span>
-              </dd>
+              </div>
             </CustomFormLabel>
-          </dl>
-          <dl>
+          </div>
+          <div>
             <CustomFormLabel htmlFor="email">
               <CustomFormDt>{t("form.fields.email")}*</CustomFormDt>
-              <dd className="grow">
+              <div className="grow">
                 <span className="relative">
                   <CustomFormInput
                     id="email"
@@ -183,13 +183,13 @@ export function ContactPageFormContent() {
                     </CustomFormErrorMessage>
                   )}
                 </span>
-              </dd>
+              </div>
             </CustomFormLabel>
-          </dl>
-          <dl>
+          </div>
+          <div>
             <CustomFormLabel htmlFor="message">
               <CustomFormDt>{t("form.fields.message")}*</CustomFormDt>
-              <dd className="grow">
+              <div className="grow">
                 <span className="relative">
                   <CustomFormTextarea
                     id="message"
@@ -210,9 +210,9 @@ export function ContactPageFormContent() {
                     </CustomFormErrorMessage>
                   )}
                 </span>
-              </dd>
+              </div>
             </CustomFormLabel>
-          </dl>
+          </div>
         </div>
       </div>
       <div className="flex mt-[7.8125vw] lg:!mt-[60px] mb-10">

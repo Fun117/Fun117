@@ -19,7 +19,7 @@ function ServerWorldMap() {
         <p className="font-bold text-xl md:text-4xl text-black dark:text-white">
           {t("title", { service: "Vercel Hosting" })}
         </p>
-        <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
+        <p className="text-sm md:text-lg text-neutral-500 dark:text-neutral-400 max-w-2xl mx-auto py-4">
           {t("description")}
         </p>
       </div>

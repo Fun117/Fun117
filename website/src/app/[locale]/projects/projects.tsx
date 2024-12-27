@@ -18,12 +18,12 @@ function ExpandableCardGridMapDiv({
   id: string;
   card: uiExpandableCardGridType;
   children: ReactNode;
-  onClick?: React.MouseEventHandler<HTMLDivElement> | undefined;
+  onClick: React.MouseEventHandler<HTMLLIElement> | undefined;
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <motion.div
+    <motion.li
       layoutId={`card-${card.title}-${id}`}
       key={card.title}
       onClick={onClick}
@@ -55,7 +55,7 @@ function ExpandableCardGridMapDiv({
       animate={isInView ? "visible" : "hidden"}
     >
       {children}
-    </motion.div>
+    </motion.li>
   );
 }
 
@@ -214,12 +214,12 @@ export function ExpandableCardGrid({
                 />
               </motion.div>
               <div className="flex justify-center items-center flex-col">
-                <motion.h3
+                <motion.span
                   layoutId={`title-${card.title}-${id}`}
                   className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
                 >
                   {card.title}
-                </motion.h3>
+                </motion.span>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
                   className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"

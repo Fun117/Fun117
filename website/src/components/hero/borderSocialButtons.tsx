@@ -64,6 +64,7 @@ function BorderSocialButtonLi({ social }: { social: socialType }) {
             social.className
           )}
         >
+          <span className="sr-only">{social.label}</span>
           <social.icon className="text-3xl" />
         </Link>
       </Tooltip>
