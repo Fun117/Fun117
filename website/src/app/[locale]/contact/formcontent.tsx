@@ -21,9 +21,9 @@ export function CustomFormLabel({
 
 export function CustomFormDt({ children }: { children: ReactNode }) {
   return (
-    <dt className="flex justify-between items-center font-bold text-[3.38542vw] lg:!text-xl text-justify tracking-[.04em] leading-6 uppercase w-[27.34375vw] lg:!w-[283px] mb-[2vw] lg:!mb-0">
+    <div className="flex justify-between items-center font-bold text-[3.38542vw] lg:!text-xl text-justify tracking-[.04em] leading-6 uppercase w-[27.34375vw] lg:!w-[283px] mb-[2vw] lg:!mb-0">
       {children}
-    </dt>
+    </div>
   );
 }
 

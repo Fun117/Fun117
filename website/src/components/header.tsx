@@ -64,6 +64,7 @@ export default function Header() {
               <button
                 className="flex justify-center items-center"
                 onClick={onOpen}
+                aria-label="Header Menu Button"
               >
                 {isOpen ? <IconX /> : <IconMenu2 />}
               </button>
