@@ -17,6 +17,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -169,7 +170,8 @@ export default async function LocaleLayout({
           {...config.themeConfig.colorMode.custom}
         >
           <NextIntlClientProvider messages={messages}>
-            <main className="w-full h-full">{children}</main>
+            <Header />
+            <main className="w-full h-full pt-10">{children}</main>
             <Footer />
             <Toaster />
           </NextIntlClientProvider>
