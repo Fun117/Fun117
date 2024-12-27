@@ -20,6 +20,7 @@ import {
   CustomFormLabel,
   CustomFormTextarea,
 } from "./formcontent";
+import { useSearchParams } from "next/navigation";
 
 export function ContactPageTopTitle() {
   const t = useTranslations("pages.contact");
@@ -41,6 +42,7 @@ export function ContactPageTopTitle() {
 }
 
 export function ContactPageFormContent() {
+  const searchParams = useSearchParams();
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isFormState, setIsFormState] = useState<boolean>(false);
 
@@ -135,6 +137,7 @@ export function ContactPageFormContent() {
                   <CustomFormInput
                     id="company"
                     type="text"
+                    defaultValue={searchParams.get("company") || undefined}
                     {...register("company")}
                   />
                 </span>
@@ -150,6 +153,7 @@ export function ContactPageFormContent() {
                     id="name"
                     type="text"
                     isRequired
+                    defaultValue={searchParams.get("name") || undefined}
                     {...register("name")}
                   />
                   {errors.name && (
@@ -170,6 +174,7 @@ export function ContactPageFormContent() {
                     id="email"
                     type="email"
                     isRequired
+                    defaultValue={searchParams.get("email") || undefined}
                     {...register("email")}
                   />
                   {errors.email && (
@@ -196,6 +201,7 @@ export function ContactPageFormContent() {
                       base: "w-full",
                       input: "resize-y min-h-[40px] max-h-[50vw]",
                     }}
+                    defaultValue={searchParams.get("message") || undefined}
                     {...register("message")}
                   />
                   {errors.message && (

@@ -11,6 +11,13 @@
     "label": "言語の変更",
     "locale": "{locale, select, ja {🇯🇵 日本語} en {🇺🇸 English} other {Unknown}}"
   },
+  "header": {
+    "title": "桐生トア",
+    "buttons": {
+      "request": "依頼をする",
+      "close": "閉じる"
+    }
+  },
   "footer": {
     "description": "桐生トア公式ウェブサイト",
     "copyright": "著作権 © 2024 桐生トア. 無断複写・転載を禁じます",

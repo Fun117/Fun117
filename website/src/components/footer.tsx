@@ -17,6 +17,71 @@ export type FooterNavItemType = {
   items: FooterNavItemLinkType[];
 };
 
+export const footerItems: FooterNavItemType[] = [
+  {
+    label: "website",
+    items: [
+      {
+        href: "/",
+        label: "home",
+      },
+      {
+        href: "/projects",
+        label: "projects",
+      },
+      {
+        href: "/contact",
+        label: "contact",
+      },
+    ],
+  },
+  {
+    label: "projects",
+    items: [
+      {
+        href: "https://craftrecycle.toakiryu.com",
+        label: "craftrecycle",
+      },
+      {
+        href: "https://gform-quick-submit.toakiryu.com",
+        label: "gform-quick-submit",
+      },
+      {
+        href: "https://nextjs-rich-tpl.toakiryu.com",
+        label: "nextjs-rich-tpl",
+      },
+      {
+        href: "https://safe-encode.vercel.app",
+        label: "safe-encode",
+      },
+      {
+        href: "https://scpay.vercel.app",
+        label: "scpay",
+      },
+      {
+        href: "https://scratch-building.vercel.app",
+        label: "scratch-building",
+      },
+      {
+        href: "https://scratch-status.toakiryu.com",
+        label: "scratch-status",
+      },
+      {
+        href: "https://support-scripts.toakiryu.com",
+        label: "support-scripts",
+      },
+      {
+        href: "https://vspodb.vercel.app",
+        label: "vspodb",
+      },
+      {
+        href: "https://zshmgr.vercel.app",
+        label: "zshmgr",
+      },
+    ],
+  },
+];
+
 function Footer() {
   const t = useTranslations("footer");
 
@@ -26,71 +91,6 @@ function Footer() {
   //     behavior: "smooth",
   //   });
   // };
-
-  const links: FooterNavItemType[] = [
-    {
-      label: "website",
-      items: [
-        {
-          href: "/",
-          label: "home",
-        },
-        {
-          href: "/projects",
-          label: "projects",
-        },
-        {
-          href: "/contact",
-          label: "contact",
-        },
-      ],
-    },
-    {
-      label: "projects",
-      items: [
-        {
-          href: "https://craftrecycle.toakiryu.com",
-          label: "craftrecycle",
-        },
-        {
-          href: "https://gform-quick-submit.toakiryu.com",
-          label: "gform-quick-submit",
-        },
-        {
-          href: "https://nextjs-rich-tpl.toakiryu.com",
-          label: "nextjs-rich-tpl",
-        },
-        {
-          href: "https://safe-encode.vercel.app",
-          label: "safe-encode",
-        },
-        {
-          href: "https://scpay.vercel.app",
-          label: "scpay",
-        },
-        {
-          href: "https://scratch-building.vercel.app",
-          label: "scratch-building",
-        },
-        {
-          href: "https://scratch-status.toakiryu.com",
-          label: "scratch-status",
-        },
-        {
-          href: "https://support-scripts.toakiryu.com",
-          label: "support-scripts",
-        },
-        {
-          href: "https://vspodb.vercel.app",
-          label: "vspodb",
-        },
-        {
-          href: "https://zshmgr.vercel.app",
-          label: "zshmgr",
-        },
-      ],
-    },
-  ];
 
   return (
     <footer className="w-full pt-10 bg-neutral-100 dark:bg-neutral-900">
@@ -122,23 +122,23 @@ function Footer() {
             </div>
           </div>
           <div className="flex gap-10">
-            {links.map((link, index) => {
+            {footerItems.map((item, index) => {
               return (
                 <div key={index}>
                   <h2 className="font-bold">
-                    {t(`items.${link.label}.label`)}
+                    {t(`items.${item.label}.label`)}
                   </h2>
                   <ul className="flex flex-col mt-5 *:mb-1">
-                    {link.items.map((item, idx) => {
-                      const isSiteUrl = item.href.indexOf(`https://`) !== 0;
+                    {item.items.map((link, idx) => {
+                      const isSiteUrl = link.href.indexOf(`https://`) !== 0;
                       return (
                         <li key={idx}>
                           <Link
-                            href={item.href}
+                            href={link.href}
                             target={isSiteUrl ? "_self" : "_blank"}
                             className="opacity-70 hover:!opacity-50 transition-all duration-300 ease-in-out"
                           >
-                            {t(`items.${link.label}.links.${item.label}`)}
+                            {t(`items.${item.label}.links.${link.label}`)}
                           </Link>
                         </li>
                       );

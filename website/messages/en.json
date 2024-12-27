@@ -11,6 +11,13 @@
     "label": "Change language",
     "locale": "{locale, select, ja {🇯🇵 日本語} en {🇺🇸 English} other {Unknown}}"
   },
+  "header": {
+    "title": "Toa Kiryu",
+    "buttons": {
+      "request": "Make a Request",
+      "close": "Close"
+    }
+  },
   "footer": {
     "description": "Toa Kiryu Official Website",
     "copyright": "Copyright © 2024 Toa Kiryu. All rights reserved.",
