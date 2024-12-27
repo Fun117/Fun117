@@ -26,12 +26,13 @@ export default function Home() {
           }
         >
           <Image
-            src={`/wp-content/toakiryu/3ae6f47b-fdff-45b6-976d-4b33addd1cf5.jpeg`}
+            src={`/wp-content/toakiryu/3ae6f47b-fdff-45b6-976d-4b33addd1cf5.webp`}
             alt="Toa Kiryu Hero Image"
             height={720}
             width={1400}
             className="mx-auto rounded-2xl object-cover h-full object-center"
             draggable={false}
+            loading="lazy"
           />
         </ContainerScroll>
       </div>

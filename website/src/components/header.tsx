@@ -15,6 +15,7 @@ import { Link, usePathname } from "@/i18n/routing";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import LocaleSwitcherSelect from "./ui/LocaleSwitcherSelect";
 import { ColorModeSwitcherSelect } from "./ui/colorModeSwitcherSelect";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const tFooter = useTranslations("footer");
@@ -25,7 +26,20 @@ export default function Header() {
   return (
     <div>
       <header className="fixed z-50 top-0 left-0 right-0">
-        <div className="w-full backdrop-blur-lg border-b">
+        <motion.div
+          initial={{
+            y: -100,
+          }}
+          animate={{
+            y: 0,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.5,
+            ease: "easeInOut",
+          }}
+          className="w-full backdrop-blur-lg border-b"
+        >
           <div className="flex justify-between items-center w-full px-5 py-3">
             <div className="w-fit">
               <span className="font-bold">{t("title")}</span>
@@ -146,7 +160,7 @@ export default function Header() {
               </Drawer>
             </div>
           </div>
-        </div>
+        </motion.div>
       </header>
     </div>
   );

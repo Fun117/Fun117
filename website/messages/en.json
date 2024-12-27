@@ -70,7 +70,8 @@
           "react": "A library for building user interfaces for web and native applications",
           "typescript": "A programming language that is a superset of JavaScript",
           "nextjs": "A React framework for web development"
-        }
+        },
+        "technologies": "Available Technologies and Languages"
       },
       "serverWorldMap": {
         "title": "Using {service}",

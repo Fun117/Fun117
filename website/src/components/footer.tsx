@@ -97,7 +97,12 @@ function Footer() {
       <div className="container max-w-5xl p-5">
         <div className="grid grid-cols-1 sm:!grid-cols-2 md:!grid-cols-3 gap-10 w-full">
           <div className="mb-10">
-            <Image alt="Toa Kiryu icon" src="/wp-content/toakiryu/icon.png" className="w-10 h-10" />
+            <Image
+              alt="Toa Kiryu icon"
+              src="/wp-content/toakiryu/icon.webp"
+              className="w-10 h-10"
+              loading="lazy"
+            />
             <div className="mt-5">
               <p>{t("description")}</p>
             </div>

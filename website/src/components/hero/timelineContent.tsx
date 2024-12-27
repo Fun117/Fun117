@@ -15,11 +15,12 @@ export const timelineData = [
         </p>
         <div className="grid grid-cols-1 sm:!grid-cols-2 gap-4">
           <Image
-            src="/wp-content/images/scratchjr.png"
+            src="/wp-content/images/scratchjr.webp"
             alt="Scratch Jr"
             width={200}
             height={100}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
         </div>
       </div>
@@ -36,11 +37,12 @@ export const timelineData = [
         </p>
         <div className="grid grid-cols-1 sm:!grid-cols-2 gap-4">
           <Image
-            src="/wp-content/images/scratch.png"
+            src="/wp-content/images/scratch.webp"
             alt="Scratch"
             width={200}
             height={100}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
         </div>
       </div>
@@ -58,25 +60,28 @@ export const timelineData = [
         </p>
         <div className="flex flex-wrap gap-4">
           <Image
-            src="/wp-content/images/html-icon.png"
+            src="/wp-content/images/html-icon.webp"
             alt="HTML 5"
             width={50}
             height={50}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
           <Image
-            src="/wp-content/images/css-icon.png"
+            src="/wp-content/images/css-icon.webp"
             alt="CSS 3"
             width={50}
             height={50}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
           <Image
-            src="/wp-content/images/javascript-icon.png"
+            src="/wp-content/images/javascript-icon.webp"
             alt="JavaScript"
             width={50}
             height={50}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
         </div>
       </div>
@@ -101,39 +106,44 @@ export const timelineData = [
         </p>
         <div className="flex flex-wrap gap-4">
           <Image
-            src="/wp-content/images/nextjs.png"
+            src="/wp-content/images/nextjs.webp"
             alt="Next.js"
             width={200}
             height={100}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
           <Image
-            src="/wp-content/images/react.png"
+            src="/wp-content/images/react.webp"
             alt="React"
             width={200}
             height={100}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
           <Image
-            src="/wp-content/images/supabase.png"
+            src="/wp-content/images/supabase.webp"
             alt="Supabase"
             width={200}
             height={100}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
           <Image
-            src="/wp-content/images/clerk.jpeg"
+            src="/wp-content/images/clerk.webp"
             alt="Clerk"
             width={200}
             height={100}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
           <Image
-            src="/wp-content/images/typescript.png"
+            src="/wp-content/images/typescript.webp"
             alt="TypeScript"
             width={200}
             height={100}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            loading="lazy"
           />
         </div>
       </div>

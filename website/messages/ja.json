@@ -70,7 +70,8 @@
           "react": "Web とネイティブユーザインターフェースのためのライブラリ",
           "typescript": "JavaScriptのスーパーセットとなるプログラミング言語",
           "nextjs": "Web 向けReact フレームワーク"
-        }
+        },
+        "technologies": "使用できる技術と言語"
       },
       "serverWorldMap": {
         "title": "{service} を使用しています",
