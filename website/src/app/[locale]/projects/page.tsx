@@ -2,7 +2,7 @@
 
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
-import ProjectsContent from "./projects";
+import ProjectsContent from "./projectsContent";
 import ProjectsContentTitle from "./title";
 
 export async function generateMetadata(): Promise<Metadata> {

@@ -7,80 +7,80 @@ export const products = [
   {
     title: "Craft Recycle",
     link: "https://scratch-status.toakiryu.com",
-    thumbnail: "/wp-content/product/craftrecycle.toakiryu.com.png",
+    thumbnail: "/wp-content/product/craftrecycle.toakiryu.com.webp",
   },
   {
     title: "GForm Quick Submit",
     link: "https://gform-quick-submit.toakiryu.com",
-    thumbnail: "/wp-content/product/gform-quick-submit.toakiryu.com.png",
+    thumbnail: "/wp-content/product/gform-quick-submit.toakiryu.com.webp",
   },
   {
     title: "Next.js Rich Template",
     link: "https://nextjs-rich-tpl.toakiryu.com",
-    thumbnail: "/wp-content/product/nextjs-rich-tpl.toakiryu.com.png",
+    thumbnail: "/wp-content/product/nextjs-rich-tpl.toakiryu.com.webp",
   },
 
   {
     title: "Safe Encode",
     link: "https://safe-encode.vercel.app",
-    thumbnail: "/wp-content/product/safe-encode.vercel.app.png",
+    thumbnail: "/wp-content/product/safe-encode.vercel.app.webp",
   },
   {
     title: "ScPay",
     link: "https://scpay.vercel.app",
-    thumbnail: "/wp-content/product/scpay.vercel.app.png",
+    thumbnail: "/wp-content/product/scpay.vercel.app.webp",
   },
   {
     title: "Scratch Building",
     link: "https://scratch-building.vercel.app",
-    thumbnail: "/wp-content/product/scratch-building.vercel.app.png",
+    thumbnail: "/wp-content/product/scratch-building.vercel.app.webp",
   },
 
   {
     title: "Scratch Status",
     link: "https://scratch-status.toakiryu.com",
-    thumbnail: "/wp-content/product/scratch-status.toakiryu.com.png",
+    thumbnail: "/wp-content/product/scratch-status.toakiryu.com.webp",
   },
   {
     title: "Support Scripts",
     link: "https://support-scripts.toakiryu.com",
-    thumbnail: "/wp-content/product/support-scripts.toakiryu.com.png",
+    thumbnail: "/wp-content/product/support-scripts.toakiryu.com.webp",
   },
   {
     title: "VspoDB",
     link: "https://vspodb.vercel.app",
-    thumbnail: "/wp-content/product/vspodb.vercel.app.png",
+    thumbnail: "/wp-content/product/vspodb.vercel.app.webp",
   },
   {
     title: "Zshmgr",
     link: "https://zshmgr.vercel.app",
-    thumbnail: "/wp-content/product/zshmgr.vercel.app.png",
+    thumbnail: "/wp-content/product/zshmgr.vercel.app.webp",
   },
   {
     title: "COMING SOON",
     link: "https://renderwork.studio",
-    thumbnail: "/wp-content/product/comingsoon.png",
+    thumbnail: "/wp-content/product/comingsoon.webp",
   },
 
   {
     title: "COMING SOON",
     link: "https://cremedigital.com",
-    thumbnail: "/wp-content/product/comingsoon.png",
+    thumbnail: "/wp-content/product/comingsoon.webp",
   },
   {
     title: "COMING SOON",
     link: "https://goldenbellsacademy.com",
-    thumbnail: "/wp-content/product/comingsoon.png",
+    thumbnail: "/wp-content/product/comingsoon.webp",
   },
   {
     title: "COMING SOON",
     link: "https://invoker.lol",
-    thumbnail: "/wp-content/product/comingsoon.png",
+    thumbnail: "/wp-content/product/comingsoon.webp",
   },
   {
     title: "COMING SOON",
     link: "https://efreeinvoice.com",
-    thumbnail: "/wp-content/product/comingsoon.png",
+    thumbnail: "/wp-content/product/comingsoon.webp",
   },
 ];
 

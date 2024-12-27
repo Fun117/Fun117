@@ -48,7 +48,7 @@ const config: Config = {
       selectSwitch: true, // Whether to allow switching color modes
     },
     // URL to the social card image (replace with your project's image)
-    image: "/wp-content/toakiryu/icon_256x256.png",
+    image: "/wp-content/toakiryu/icon_256x256.webp",
     // Metadata for the site
     metadata: {
       keywords: [

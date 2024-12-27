@@ -74,7 +74,7 @@ function BorderSocialButtonLi({ social }: { social: socialType }) {
 
 function BorderSocialButtons() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false });
 
   return (
     <div className="flex flex-col justify-center items-center w-full p-5">

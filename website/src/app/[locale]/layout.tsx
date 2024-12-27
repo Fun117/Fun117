@@ -171,7 +171,7 @@ export default async function LocaleLayout({
         >
           <NextIntlClientProvider messages={messages}>
             <Header />
-            <main className="w-full h-full pt-10">{children}</main>
+            <main className="w-full h-full">{children}</main>
             <Footer />
             <Toaster />
           </NextIntlClientProvider>

@@ -95,22 +95,71 @@ export const HeroParallax = ({
 
 export const Header = () => {
   const t = useTranslations("pages.home.avatarContent");
+
   return (
     <div className="max-w-7xl relative left-0 top-0 flex flex-col md:!flex-row-reverse mx-auto py-20 md:py-40 px-4 w-full">
       <div className="flex justify-center items-center md:!w-1/2 mb-10 md:!mb-0">
-        <img
+        <motion.img
           alt="Toa Kiryu Avatar"
-          src="/wp-content/toakiryu/icon.png"
+          src="/wp-content/toakiryu/icon.webp"
           className="w-24 sm:!w-36 md:!w-48 lg:!w-56 rounded-full border"
+          loading="lazy"
+          initial={{
+            opacity: 0,
+            filter: "blur(10px)",
+          }}
+          animate={{
+            opacity: 1,
+            filter: "blur(0px)",
+          }}
+          transition={{
+            duration: 0.5,
+            delay: 0.2,
+            ease: "easeInOut",
+          }}
         />
       </div>
       <div className="md:!w-1/2">
-        <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
+        <motion.h1
+          className="text-2xl md:text-7xl font-bold dark:text-white"
+          initial={{
+            x: -50,
+            opacity: 0,
+            filter: "blur(10px)",
+          }}
+          animate={{
+            x: 0,
+            opacity: 1,
+            filter: "blur(0px)",
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.5,
+            ease: "easeInOut",
+          }}
+        >
           {t("name")} <br /> full stack developer
-        </h1>
-        <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+        </motion.h1>
+        <motion.p
+          className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200"
+          initial={{
+            x: -50,
+            opacity: 0,
+            filter: "blur(10px)",
+          }}
+          animate={{
+            x: 0,
+            opacity: 1,
+            filter: "blur(0px)",
+          }}
+          transition={{
+            duration: 1,
+            delay: 1,
+            ease: "easeInOut",
+          }}
+        >
           {t("description")}
-        </p>
+        </motion.p>
       </div>
     </div>
   );
@@ -147,6 +196,7 @@ export const ProductCard = ({
           height="600"
           width="600"
           className="object-cover object-center absolute h-full w-full inset-0"
+          loading="lazy"
           alt={product.title}
         />
       </Link>
