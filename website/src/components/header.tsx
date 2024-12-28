@@ -20,6 +20,7 @@ import { motion } from "framer-motion";
 export default function Header() {
   const tFooter = useTranslations("footer");
   const t = useTranslations("header");
+  const tContact = useTranslations("pages.contact");
   const pathname = usePathname();
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
@@ -67,12 +68,14 @@ export default function Header() {
               </nav>
             </div>
             <div className="hidden md:!block">
-              <Link
-                href="/contact?message=依頼"
+              <a
+                href={`/contact?subject=${tContact(
+                  "form.fields.subject-lists.1"
+                )}`}
                 className="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent active:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none shadow-lg shadow-primary/40 bg-primary text-primary-foreground hover:opacity-hover"
               >
                 {t("buttons.request")}
-              </Link>
+              </a>
             </div>
             <div className="md:!hidden">
               <button
@@ -138,13 +141,15 @@ export default function Header() {
                           <ColorModeSwitcherSelect />
                         </div>
                         <div className="grid grid-cols-2 gap-3 w-full">
-                          <Link
-                            href="/contact?message=依頼"
+                          <a
+                            href={`/contact?subject=${tContact(
+                              "form.fields.subject-lists.1"
+                            )}`}
                             className="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent active:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none shadow-lg shadow-primary/40 bg-primary text-primary-foreground hover:opacity-hover"
                             onClick={onClose}
                           >
                             {t("buttons.request")}
-                          </Link>
+                          </a>
                           <Button
                             color="danger"
                             variant="faded"
