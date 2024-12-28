@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useRef } from "react";
-import Link from "next/link";
 import { Tooltip } from "@nextui-org/react";
 import { socials, socialType } from "../../../config";
 
 import { motion, useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Link } from "@/i18n/routing";
 
 const variants = {
   visible: {

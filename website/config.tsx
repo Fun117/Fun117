@@ -58,28 +58,28 @@ export const products = [
   },
   {
     title: "COMING SOON",
-    link: "https://renderwork.studio",
+    link: "/comingsoon",
     thumbnail: "/wp-content/product/comingsoon.webp",
   },
 
   {
     title: "COMING SOON",
-    link: "https://cremedigital.com",
+    link: "/comingsoon",
     thumbnail: "/wp-content/product/comingsoon.webp",
   },
   {
     title: "COMING SOON",
-    link: "https://goldenbellsacademy.com",
+    link: "/comingsoon",
     thumbnail: "/wp-content/product/comingsoon.webp",
   },
   {
     title: "COMING SOON",
-    link: "https://invoker.lol",
+    link: "/comingsoon",
     thumbnail: "/wp-content/product/comingsoon.webp",
   },
   {
     title: "COMING SOON",
-    link: "https://efreeinvoice.com",
+    link: "/comingsoon",
     thumbnail: "/wp-content/product/comingsoon.webp",
   },
 ];

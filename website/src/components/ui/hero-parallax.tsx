@@ -7,8 +7,8 @@ import {
   useSpring,
   MotionValue,
 } from "framer-motion";
-import Link from "next/link";
 import { useTranslations } from "use-intl";
+import { Link } from "@/i18n/routing";
 
 export const HeroParallax = ({
   products,
