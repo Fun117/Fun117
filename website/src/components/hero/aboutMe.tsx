@@ -11,16 +11,11 @@ import BorderSocialButtons from "./borderSocialButtons";
 import { useTranslations } from "next-intl";
 import { technologies, technologiesType } from "./technologies";
 import {
-  Avatar,
-  AvatarGroup,
   Button,
   Drawer,
   DrawerBody,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
-  Image,
-  Link,
   Tooltip,
   useDisclosure,
 } from "@nextui-org/react";
