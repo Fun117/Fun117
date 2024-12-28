@@ -12,7 +12,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import toast from "react-hot-toast";
 import { GFromQuickSubmitFormPOST } from "gform-quick-submit";
 
-import { Button } from "@nextui-org/react";
+import { Button, Select, SelectItem } from "@nextui-org/react";
 import {
   CustomFormDt,
   CustomFormErrorMessage,
@@ -52,6 +52,7 @@ export function ContactPageFormContent() {
     company: z.string().optional(),
     name: z.string().min(1, t("form.errors.nameRequired")),
     email: z.string().email(t("form.errors.emailInvalid")),
+    subject: z.string().min(1, t("form.errors.subjectRequired")),
     message: z.string().min(1, t("form.errors.messageRequired")),
   });
 
@@ -82,6 +83,10 @@ export function ContactPageFormContent() {
         {
           key: "1959211618",
           value: data.email,
+        },
+        {
+          key: "1975770837",
+          value: data.subject,
         },
         {
           key: "272465746",
@@ -180,6 +185,70 @@ export function ContactPageFormContent() {
                   {errors.email && (
                     <CustomFormErrorMessage>
                       {errors.email.message}
+                    </CustomFormErrorMessage>
+                  )}
+                </span>
+              </div>
+            </CustomFormLabel>
+          </div>
+          <div>
+            <CustomFormLabel htmlFor="subject">
+              <CustomFormDt>{t("form.fields.subject")}*</CustomFormDt>
+              <div className="grow">
+                <span className="relative">
+                  <Select
+                    id="subject"
+                    aria-label="subject a select"
+                    isRequired
+                    defaultSelectedKeys={
+                      searchParams.get("subject")
+                        ? [`${searchParams.get("subject")}`]
+                        : []
+                    }
+                    errorMessage={t("form.errors.subjectRequired")}
+                    className="text-[3.38542vw] lg:!text-base w-full h-fit py-[1.5625vw] px-[2.34375vw] lg:!py-[18px] lg:!px-[15px] rounded-[1.30208vw] lg:!rounded-[10px]"
+                    {...register("subject")}
+                  >
+                    <SelectItem
+                      key={t("form.fields.subject-lists.1")}
+                      value={t("form.fields.subject-lists.1")}
+                    >
+                      {t("form.fields.subject-lists.1")}
+                    </SelectItem>
+                    <SelectItem
+                      key={t("form.fields.subject-lists.2")}
+                      value={t("form.fields.subject-lists.2")}
+                    >
+                      {t("form.fields.subject-lists.2")}
+                    </SelectItem>
+                    <SelectItem
+                      key={t("form.fields.subject-lists.3")}
+                      value={t("form.fields.subject-lists.3")}
+                    >
+                      {t("form.fields.subject-lists.3")}
+                    </SelectItem>
+                    <SelectItem
+                      key={t("form.fields.subject-lists.4")}
+                      value={t("form.fields.subject-lists.4")}
+                    >
+                      {t("form.fields.subject-lists.4")}
+                    </SelectItem>
+                    <SelectItem
+                      key={t("form.fields.subject-lists.5")}
+                      value={t("form.fields.subject-lists.5")}
+                    >
+                      {t("form.fields.subject-lists.5")}
+                    </SelectItem>
+                    <SelectItem
+                      key={t("form.fields.subject-lists.6")}
+                      value={t("form.fields.subject-lists.6")}
+                    >
+                      {t("form.fields.subject-lists.6")}
+                    </SelectItem>
+                  </Select>
+                  {errors.subject && (
+                    <CustomFormErrorMessage>
+                      {errors.subject.message}
                     </CustomFormErrorMessage>
                   )}
                 </span>

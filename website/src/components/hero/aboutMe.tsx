@@ -9,8 +9,21 @@ import { SiTypescript } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import BorderSocialButtons from "./borderSocialButtons";
 import { useTranslations } from "next-intl";
-import { technologies } from "./technologies";
-import { Tooltip } from "@nextui-org/react";
+import { technologies, technologiesType } from "./technologies";
+import {
+  Avatar,
+  AvatarGroup,
+  Button,
+  Drawer,
+  DrawerBody,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  Image,
+  Link,
+  Tooltip,
+  useDisclosure,
+} from "@nextui-org/react";
 
 function AnimateContentDiv({ children }: { children: ReactNode }) {
   const ref = useRef(null);
@@ -46,6 +59,79 @@ function AnimateContentDiv({ children }: { children: ReactNode }) {
     >
       {children}
     </motion.div>
+  );
+}
+
+function TechContentCard({ tech }: { tech: technologiesType }) {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  return (
+    <AnimateContentDiv>
+      <Tooltip showArrow content={tech.label}>
+        <span className="p-3 border rounded-lg cursor-pointer" onClick={onOpen}>
+          <tech.icon size={50} stroke={1} />
+        </span>
+      </Tooltip>
+      <Drawer
+        hideCloseButton
+        backdrop="blur"
+        classNames={{
+          base: "data-[placement=right]:sm:m-2 data-[placement=left]:sm:m-2  rounded-medium",
+        }}
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        placement="bottom"
+      >
+        <DrawerContent>
+          {(onClose) => (
+            <>
+              <DrawerHeader className="absolute top-0 inset-x-0 z-50 flex flex-row gap-2 px-2 py-2 border-b border-default-200/50 justify-between bg-content1/50 backdrop-saturate-150 backdrop-blur-lg">
+                <Tooltip content="Close">
+                  <Button
+                    isIconOnly
+                    className="text-default-400"
+                    size="sm"
+                    variant="light"
+                    onPress={onClose}
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="m13 17 5-5-5-5M6 17l5-5-5-5" />
+                    </svg>
+                  </Button>
+                </Tooltip>
+              </DrawerHeader>
+              <DrawerBody className="pt-16">
+                <div className="flex flex-col gap-2 py-4">
+                  <h1 className="text-2xl font-bold leading-7">
+                    {tech.card.title || tech.label}
+                  </h1>
+                  <p className="text-sm text-default-500">
+                    {tech.card.subtitle}
+                  </p>
+                  <div className="mt-4 flex flex-col gap-3">
+                    <div className="flex flex-col mt-4 gap-3 items-start">
+                      <div className="text-medium text-default-500 flex flex-col gap-2">
+                        {tech.card.description}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </DrawerBody>
+            </>
+          )}
+        </DrawerContent>
+      </Drawer>
+    </AnimateContentDiv>
   );
 }
 
@@ -116,18 +202,15 @@ function HeroAboutMeContent() {
           animate={isInView2 ? "visible" : "hidden"}
           className="max-w-3xl mt-10 text-center"
         >
-          <span className="font-bold text-lg sm:!text-xl md:!text-2xl lg:!text-3xl">
-            {t("technologies")}
-          </span>
+          <div>
+            <span className="font-bold text-lg sm:!text-xl md:!text-2xl lg:!text-3xl">
+              {t("technologies")}
+            </span>
+            <p className="opacity-70 mt-2">{t("technologies-description")}</p>
+          </div>
           <div className="flex flex-wrap justify-center items-center gap-3 mt-5">
             {technologies.map((tech, index) => {
-              return (
-                <AnimateContentDiv key={index}>
-                  <Tooltip content={tech.label} showArrow>
-                    <tech.icon size={50} stroke={1} />
-                  </Tooltip>
-                </AnimateContentDiv>
-              );
+              return <TechContentCard key={index} tech={tech} />;
             })}
           </div>
         </motion.div>
