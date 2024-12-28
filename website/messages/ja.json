@@ -71,7 +71,8 @@
           "typescript": "JavaScriptのスーパーセットとなるプログラミング言語",
           "nextjs": "Web 向けReact フレームワーク"
         },
-        "technologies": "使用できる技術と言語"
+        "technologies": "使用できる技術と言語",
+        "technologies-description": "カードを押すと概要が表示されます"
       },
       "serverWorldMap": {
         "title": "{service} を使用しています",
@@ -105,11 +106,21 @@
           "company": "会社名 (任意)",
           "name": "名前",
           "email": "メールアドレス",
+          "subject": "主題",
+          "subject-lists": {
+            "1": "制作に関するお問い合わせ",
+            "2": "機能やバグに関するお問い合わせ",
+            "3": "サービス内容に関するお問い合わせ",
+            "4": "アカウントやサポートに関するお問い合わせ",
+            "5": "コラボや提案について",
+            "6": "その他"
+          },
           "message": "メッセージ"
         },
         "errors": {
           "nameRequired": "名前を入力してください",
           "emailInvalid": "有効なメールアドレスを入力してください",
+          "subjectRequired": "主題を選択してください",
           "messageRequired": "メッセージを入力してください"
         },
         "success": {

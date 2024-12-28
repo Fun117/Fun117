@@ -71,7 +71,8 @@
           "typescript": "A programming language that is a superset of JavaScript",
           "nextjs": "A React framework for web development"
         },
-        "technologies": "Available Technologies and Languages"
+        "technologies": "Available Technologies and Languages",
+        "technologies-description": "Press the card to display an overview."
       },
       "serverWorldMap": {
         "title": "Using {service}",
@@ -105,11 +106,21 @@
           "company": "Company (Optional)",
           "name": "Name",
           "email": "Email Address",
+          "subject": "Subject",
+          "subject-lists": {
+            "1": "Inquiries about production",
+            "2": "Inquiries about features or bugs",
+            "3": "Inquiries about service details",
+            "4": "Inquiries about accounts or support",
+            "5": "Inquiries about collaboration or proposals",
+            "6": "Others"
+          },
           "message": "Message"
         },
         "errors": {
           "nameRequired": "Please enter your name",
           "emailInvalid": "Please enter a valid email address",
+          "subjectRequired": "Please select a subject",
           "messageRequired": "Please enter a message"
         },
         "success": {
