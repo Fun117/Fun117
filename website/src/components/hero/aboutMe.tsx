@@ -64,14 +64,30 @@ function TechContentCard({ tech }: { tech: technologiesType }) {
     <AnimateContentDiv>
       <Tooltip showArrow content={tech.label}>
         <span className="p-3 border rounded-lg cursor-pointer" onClick={onOpen}>
-          <tech.icon size={50} stroke={1} />
+          <tech.icon
+            size={50}
+            stroke={1.5}
+            className={` ${
+              tech.rank === 1
+                ? "text-yellow-500"
+                : tech.rank === 2
+                ? "text-yellow-600/90"
+                : tech.rank === 3
+                ? "text-yellow-700/80"
+                : tech.rank === 4
+                ? "text-yellow-800/70"
+                : tech.rank === 5
+                ? "text-yellow-950/60"
+                : ""
+            }`}
+          />
         </span>
       </Tooltip>
       <Drawer
         hideCloseButton
         backdrop="blur"
         classNames={{
-          base: "data-[placement=right]:sm:m-2 data-[placement=left]:sm:m-2  rounded-medium",
+          base: "w-auto data-[placement=right]:sm:m-2 data-[placement=left]:sm:m-2  rounded-medium",
         }}
         isOpen={isOpen}
         onOpenChange={onOpenChange}
@@ -104,13 +120,34 @@ function TechContentCard({ tech }: { tech: technologiesType }) {
                     </svg>
                   </Button>
                 </Tooltip>
+                <div className="w-full flex justify-start gap-2">
+                  <Button
+                    className="font-medium text-small text-default-500"
+                    size="sm"
+                    variant="flat"
+                  >
+                    <span>
+                      {tech.rank === 1
+                        ? "習得済み"
+                        : tech.rank === 2
+                        ? "上級"
+                        : tech.rank === 3
+                        ? "中級"
+                        : tech.rank === 4
+                        ? "初級"
+                        : tech.rank === 5
+                        ? "学習中"
+                        : "N/A"}
+                    </span>
+                  </Button>
+                </div>
               </DrawerHeader>
               <DrawerBody className="pt-16">
                 <div className="flex flex-col gap-2 py-4">
                   <h1 className="text-2xl font-bold leading-7">
                     {tech.card.title || tech.label}
                   </h1>
-                  <p className="text-sm text-default-500">
+                  <p className="mt-1 text-sm text-default-500">
                     {tech.card.subtitle}
                   </p>
                   <div className="mt-4 flex flex-col gap-3">
