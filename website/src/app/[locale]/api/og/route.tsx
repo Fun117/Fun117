@@ -41,7 +41,7 @@ export async function GET(request: NextRequest) {
     title: string;
     description: string;
   }) {
-    if (theme === "mainTitleMinIcon" || description) {
+    if (theme === "mainTitleMinIcon") {
       return (
         <div tw="flex flex-col justify-center items-start w-full h-full text-left px-[120px] py-[100px]">
           <div tw="flex justify-center items-center">
@@ -67,7 +67,7 @@ export async function GET(request: NextRequest) {
           <div tw="flex flex-col text-white w-full mt-auto">
             <h1
               style={{
-                fontSize: 40,
+                fontSize: 60,
                 fontStyle: "normal",
                 fontWeight: "bold",
                 lineHeight: 1.3,
@@ -81,7 +81,7 @@ export async function GET(request: NextRequest) {
             <p
               tw="text-white/80"
               style={{
-                fontSize: 25,
+                fontSize: 30,
                 fontStyle: "normal",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
@@ -107,7 +107,7 @@ export async function GET(request: NextRequest) {
         <h1
           tw="text-white"
           style={{
-            fontSize: 40,
+            fontSize: 60,
             fontStyle: "normal",
             fontWeight: "bold",
             lineHeight: 1.3,
