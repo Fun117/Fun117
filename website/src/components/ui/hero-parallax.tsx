@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { ReactNode } from "react";
 import {
   motion,
   useScroll,
@@ -15,7 +15,7 @@ export const HeroParallax = ({
 }: {
   products: {
     title: string;
-    link: string;
+    link?: string;
     thumbnail: string;
   }[];
 }) => {
@@ -171,11 +171,27 @@ export const ProductCard = ({
 }: {
   product: {
     title: string;
-    link: string;
+    link?: string;
     thumbnail: string;
   };
   translate: MotionValue<number>;
 }) => {
+  function LinkContent({ children }: { children: ReactNode }) {
+    if (product.link) {
+      return (
+        <Link
+          href={product.link}
+          className="block group-hover/product:shadow-2xl "
+        >
+          {children}
+        </Link>
+      );
+    }
+    return (
+      <div className="block group-hover/product:shadow-2xl ">{children}</div>
+    );
+  }
+
   return (
     <motion.div
       style={{
@@ -187,10 +203,8 @@ export const ProductCard = ({
       key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
-      <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
-      >
+      {product.link}
+      <LinkContent>
         <img
           src={product.thumbnail}
           height="600"
@@ -199,7 +213,7 @@ export const ProductCard = ({
           loading="lazy"
           alt={product.title}
         />
-      </Link>
+      </LinkContent>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}

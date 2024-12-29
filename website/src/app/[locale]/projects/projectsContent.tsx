@@ -1,6 +1,13 @@
 "use client";
 
-import React, { ReactNode, useEffect, useId, useRef, useState } from "react";
+import React, {
+  JSX,
+  ReactNode,
+  useEffect,
+  useId,
+  useRef,
+  useState,
+} from "react";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { cn } from "@/lib/utils";
@@ -17,7 +24,7 @@ function ExpandableCardGridMapDiv({
   onClick,
 }: {
   id: string;
-  card: uiExpandableCardGridType;
+  card: projectExpandableCardGridType;
   children: ReactNode;
   onClick: React.MouseEventHandler<HTMLLIElement> | undefined;
 }) {
@@ -60,11 +67,21 @@ function ExpandableCardGridMapDiv({
   );
 }
 
+export type projectExpandableCardGridType = {
+  title: string;
+  times: string;
+  src: string;
+  ctaText: string;
+  ctaLink: string;
+  description: () => JSX.Element | string;
+  content: () => JSX.Element;
+};
+
 export function ExpandableCardGrid({
   cards,
   classNames,
 }: {
-  cards: uiExpandableCardGridType[];
+  cards: projectExpandableCardGridType[];
   classNames?: {
     ul?: string;
   };
@@ -154,10 +171,10 @@ export function ExpandableCardGrid({
                       {active.title}
                     </motion.h3>
                     <motion.p
-                      layoutId={`description-${active.description}-${id}`}
+                      layoutId={`description-${active.times}-${id}`}
                       className="text-neutral-600 dark:text-neutral-400 text-base"
                     >
-                      {active.description}
+                      {active.times}
                     </motion.p>
                   </div>
 
@@ -181,6 +198,12 @@ export function ExpandableCardGrid({
                     exit={{ opacity: 0 }}
                     className="text-neutral-600 text-xs md:text-sm lg:text-base h-auto md:h-fit pb-10 flex flex-col items-start gap-4 overflow-y-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
+                    <div className="text-neutral-700 dark:text-neutral-300">
+                      {typeof active.description === "function"
+                        ? active.description()
+                        : active.description}
+                    </div>
+                    <hr className="w-full" />
                     {typeof active.content === "function"
                       ? active.content()
                       : active.content}
@@ -222,10 +245,10 @@ export function ExpandableCardGrid({
                   {card.title}
                 </motion.span>
                 <motion.p
-                  layoutId={`description-${card.description}-${id}`}
+                  layoutId={`description-${card.times}-${id}`}
                   className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
                 >
-                  {card.description}
+                  {card.times}
                 </motion.p>
               </div>
             </div>
