@@ -13,7 +13,6 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 import { cn } from "@/lib/utils";
 import {
   CloseIcon,
-  uiExpandableCardGridType,
 } from "@/components/ui/expandableCard";
 import { cards } from "./projectCards";
 

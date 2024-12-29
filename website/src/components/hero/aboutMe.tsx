@@ -12,7 +12,6 @@ import { useTranslations } from "next-intl";
 import { technologies, technologiesType } from "./technologies";
 import {
   Button,
-  Divider,
   Drawer,
   DrawerBody,
   DrawerContent,
