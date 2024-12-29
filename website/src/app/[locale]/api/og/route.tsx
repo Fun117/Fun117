@@ -128,7 +128,7 @@ export async function GET(request: NextRequest) {
         <div
           style={{
             backgroundImage:
-              "url(http://localhost:3000/wp-content/upload/sl_0210121_40570_31.jpg)",
+              "url(https://toakiryu.com/wp-content/upload/sl_0210121_40570_31.jpg)",
             backgroundColor: "#fff",
             backgroundSize: "100% 100%",
           }}
