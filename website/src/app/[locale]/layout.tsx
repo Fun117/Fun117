@@ -44,6 +44,9 @@ export async function generateMetadata(props: {
   const pathname = header.get("x-pathname");
   const path = pathname ? pathname : "";
   let nowUrl = path.replace(`/${locale}`, "");
+  if (!nowUrl) {
+    nowUrl = "/";
+  }
 
   const generateAlternates = () => {
     const alternates: {
@@ -65,10 +68,11 @@ export async function generateMetadata(props: {
     return alternates;
   };
 
+  console.log(nowUrl);
   const openGraphImageURL = `${
     nowUrl === "/"
       ? `/${locale}/api/og`
-      : `${`/${locale}/api/og?title=${
+      : `${`/${locale}/api/og?theme=mainTitleMinIcon&title=${
           tOpenGraph.has(`${nowUrl}.title`)
             ? tOpenGraph(`${nowUrl}.title`)
             : t(`title`)
@@ -78,8 +82,6 @@ export async function generateMetadata(props: {
             : t(`description`)
         } `}`
   }`;
-
-  console.log(openGraphImageURL);
 
   return {
     title: {
