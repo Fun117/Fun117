@@ -1,7 +1,16 @@
 {
   "metadata": {
     "title": "桐生トア | 公式ウェブサイト",
+    "templateTitle": "桐生トア",
     "description": "最新のテクノロジーやフレームワークを駆使し、モダンでスケーラブルなウェブアプリケーションを開発します。ReactとTypeScriptを得意とし、フロントエンド開発を中心に活動しています。"
+  },
+  "open-graph": {
+    "/projects": {
+      "title": "プロジェクト"
+    },
+    "/contact": {
+      "title": "お問い合わせ"
+    }
   },
   "colorModeSwitcher": {
     "label": "テーマの変更",

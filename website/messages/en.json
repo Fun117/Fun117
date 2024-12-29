@@ -1,7 +1,16 @@
 {
   "metadata": {
     "title": "Toa Kiryu | Official Website",
+    "templateTitle": "Toa Kiryu",
     "description": "I leverage the latest technologies and frameworks to develop modern, scalable web applications. Skilled in React and TypeScript, I primarily focus on frontend development."
+  },
+  "open-graph": {
+    "/projects": {
+      "title": "Projects"
+    },
+    "/contact": {
+      "title": "Contact"
+    }
   },
   "colorModeSwitcher": {
     "label": "Change theme",

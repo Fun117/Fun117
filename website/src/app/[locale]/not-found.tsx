@@ -1,12 +1,12 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 
 export default function NotFoundPage() {
+  const tSite = useTranslations("metadata");
   const t = useTranslations("pages.notfound");
 
   return (
     <div className="flex justify-center items-center h-dvh">
+      <title>{`${t("metadata.title")} | ${tSite("templateTitle")}`}</title>
       <div className="flex flex-col text-center">
         <h1 className="font-bold text-3xl sm:!text-4xl md:!text-5xl lg:!text-6xl">
           404

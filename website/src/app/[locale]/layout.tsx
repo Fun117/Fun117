@@ -38,10 +38,12 @@ export async function generateMetadata(props: {
 }): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "metadata" });
+  const tOpenGraph = await getTranslations({ locale, namespace: "open-graph" });
 
   const header = await headers();
   const pathname = header.get("x-pathname");
   const path = pathname ? pathname : "";
+  let nowUrl = path.replace(`/${locale}`, "");
 
   const generateAlternates = () => {
     const alternates: {
@@ -63,10 +65,28 @@ export async function generateMetadata(props: {
     return alternates;
   };
 
+  const openGraphImageURL = `${
+    nowUrl === "/"
+      ? `/${locale}/api/og`
+      : `${`/${locale}/api/og?title=${
+          tOpenGraph.has(`${nowUrl}.title`)
+            ? tOpenGraph(`${nowUrl}.title`)
+            : t(`title`)
+        }&description=${
+          tOpenGraph.has(`${nowUrl}.description`)
+            ? tOpenGraph(`${nowUrl}.description`)
+            : t(`description`)
+        } `}`
+  }`;
+
+  console.log(openGraphImageURL);
+
   return {
     title: {
       template: `%s | ${
-        config.themeConfig?.metadata?.title || config.title || t(`title`)
+        config.themeConfig?.metadata?.title ||
+        config.title ||
+        t(`templateTitle`)
       }`,
       default: `${
         config.themeConfig?.metadata?.title || config.title || t(`title`)
@@ -106,9 +126,7 @@ export async function generateMetadata(props: {
         config.themeConfig?.metadata?.openGraph?.description ||
         config.description ||
         t(`description`),
-      images:
-        config.themeConfig.metadata?.openGraph?.images ||
-        config.themeConfig.image,
+      images: openGraphImageURL,
       locale:
         config.themeConfig?.metadata?.openGraph?.locale ||
         config.i18n.localeConfigs[locale].htmlLang ||
@@ -134,9 +152,7 @@ export async function generateMetadata(props: {
         config.themeConfig?.metadata?.creator ||
         "toakiryu"
       }`,
-      images:
-        config.themeConfig.metadata?.twitter?.images ||
-        config.themeConfig.image,
+      images: openGraphImageURL,
     },
     ...config.themeConfig?.metadata,
   };
