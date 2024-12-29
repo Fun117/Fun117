@@ -1,4 +1,13 @@
+"use server";
+
 import React from "react";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "COMING SOON",
+  };
+}
 
 function ComingSoon() {
   return (

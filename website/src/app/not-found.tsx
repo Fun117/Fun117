@@ -1,18 +1,15 @@
 "use client";
 
-import { Spinner } from "@nextui-org/react";
+import Error from "next/error";
 
 export default function NotFoundPage() {
-
   return (
     <html>
+      <head>
+        <title>404</title>
+      </head>
       <body>
-        <div className="flex justify-center items-center w-full h-dvh">
-          <div className="flex justify-center items-center">
-            <Spinner size="sm" className="mr-2" />
-            <h1>Redirect...</h1>
-          </div>
-        </div>
+        <Error statusCode={404} />
       </body>
     </html>
   );
