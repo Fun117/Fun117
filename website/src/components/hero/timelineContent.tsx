@@ -9,9 +9,10 @@ export const timelineData = [
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          学校で新たに始まったプログラミングの授業で、Scratch Jr
-          のブロックプログラミングを体験する。学校から全生徒に IPad
-          が支給され自宅でも、Scratch Jr を使って遊ぶようになる。
+          学校で新たにプログラミングの授業が始まり、Scratch Jr
+          のブロックプログラミングを体験しました。この授業をきっかけに、プログラミングに対する興味が芽生え、さらに自宅でも学習を続けるようになりました。学校から全生徒に支給された
+          iPad では、Scratch Jr
+          を使って遊びながら学び、プログラミングの基本的な概念に触れることができました。
         </p>
         <div className="grid grid-cols-1 sm:!grid-cols-2 gap-4">
           <Image
@@ -31,9 +32,9 @@ export const timelineData = [
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          プログラミングに興味を持ち始め、自分でいろいろ調べるようになり、Scratch
-          Jr 関連サービスの Scratch
-          を発見した。その後独学でプロジェクトを作成するようになる。
+          プログラミングに興味を持ち始めた私は、独学でさらに学びを深めることを決意し、Scratch
+          Jr から発展した Scratch を発見しました。Scratch
+          は、視覚的なプログラミングだけでなく、より本格的なプロジェクト作成を可能にするツールであり、そこから私は自分のプロジェクト制作に取り組み始めました。最初は簡単なゲームやアニメーションを作成して、プログラミングに慣れていきました。
         </p>
         <div className="grid grid-cols-1 sm:!grid-cols-2 gap-4">
           <Image
@@ -53,10 +54,11 @@ export const timelineData = [
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          中学生に進学し、お小遣いを使い初めて PC
-          を購入する。よりプログラミングに関わるようになり、ブロックプログラミングから、コードプログラミングに挑戦する。初めてのコーディングは、HTML
-          と CSS を使って静止サイトを作成した。約一年 HTML
-          を学習し、その延長線で JavaScript を使って動的サイトの学習を始める。
+          中学校に進学した私は、初めて自分のお小遣いで PC
+          を購入しました。これにより、プログラミングへの関わりがさらに深まり、ブロックプログラミングからコーディングの世界へ挑戦することになりました。最初に挑戦したのは、HTML
+          と CSS を使用して静的なウェブサイトを作成することでした。約一年間 HTML
+          を学び、その後、JavaScript
+          を使って動的なウェブサイトの作成に挑戦しました。
         </p>
         <div className="flex flex-wrap gap-4">
           <Image
@@ -90,19 +92,20 @@ export const timelineData = [
   {
     title: "2024",
     content: (
-      <div>
+      <>
         <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          静止サイトの開発から、動的サイトの開発をするようになった。Youtube
-          で、React の存在を知り、それから UI
-          構築ライブラリを学習するようになる。 トレンドの Next.js
-          などのフレームワークを集中的に使用するようにして、約半年で基本的なことを習得した。気づかずうちに、JavaScript
-          と TypeScript も使えるようになっていた。それからは、Next.js
-          を使ってウェブサイトを制作するようになった。
+          静的なサイトの開発から、動的なウェブサイトの開発に進展しました。YouTube
+          で React を知り、その後 UI
+          構築ライブラリを学び始めました。また、Next.js
+          などのトレンドのフレームワークを集中的に学び、約半年で基本的な使い方を習得しました。この過程で、React
+          のスキルだけでなく、JavaScript と TypeScript
+          の使用にも慣れました。これにより、Next.js
+          を使って本格的なウェブサイトを制作することができるようになりました。
         </p>
         <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          この年は技術と知識の範囲が大きく広がった。年中頃は、データベースの
-          Supabase, 認証機能の clerk
-          を学習したいたが、年の終わり頃には、フロントエンドとバックエンドの両方の知識と技術が身についた。
+          2024年は技術的な成長を遂げた年でした。特に、データベースの Supabase
+          や認証機能の Clerk
+          を学んだことが印象深いです。年の終わりには、フロントエンドとバックエンドの技術をバランスよく学び、ウェブ開発における幅広いスキルを持つようになりました。
         </p>
         <div className="flex flex-wrap gap-4">
           <Image
@@ -146,7 +149,7 @@ export const timelineData = [
             loading="lazy"
           />
         </div>
-      </div>
+      </>
     ),
   },
 ];
