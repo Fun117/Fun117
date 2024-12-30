@@ -2,7 +2,7 @@
   "metadata": {
     "title": "桐生トア | 公式ウェブサイト",
     "templateTitle": "桐生トア",
-    "description": "最新のテクノロジーやフレームワークを駆使し、モダンでスケーラブルなウェブアプリケーションを開発します。ReactとTypeScriptを得意とし、フロントエンド開発を中心に活動しています。"
+    "description": "最新の技術とフレームワークを駆使し、モダンでスケーラブルなウェブアプリケーションを開発します。ReactとTypeScriptを活用したフロントエンド開発が得意です。"
   },
   "open-graph": {
     "/projects": {
@@ -13,23 +13,23 @@
     }
   },
   "colorModeSwitcher": {
-    "label": "テーマの変更",
-    "color": "{color, select, light  {ライト} dark {ダーク} system {システム} other {Unknown}}"
+    "label": "テーマ変更",
+    "color": "{color, select, light {ライト} dark {ダーク} system {システム} other {不明}}"
   },
   "localeSwitcher": {
-    "label": "言語の変更",
-    "locale": "{locale, select, ja {🇯🇵 日本語} en {🇺🇸 English} other {Unknown}}"
+    "label": "言語変更",
+    "locale": "{locale, select, ja {🇯🇵 日本語} en {🇺🇸 English} other {不明}}"
   },
   "header": {
     "title": "桐生トア",
     "buttons": {
-      "request": "依頼をする",
+      "request": "依頼する",
       "close": "閉じる"
     }
   },
   "footer": {
     "description": "桐生トア公式ウェブサイト",
-    "copyright": "著作権 © 2024 桐生トア. 無断複写・転載を禁じます",
+    "copyright": "著作権 © 2024 桐生トア. 無断複写・転載を禁じます。",
     "items": {
       "website": {
         "label": "ウェブサイト",
@@ -64,28 +64,28 @@
       "title": "ページが見つかりません"
     },
     "error": {
-      "title": "不明なエラーが発生",
-      "retry": "リトライ"
+      "title": "不明なエラーが発生しました",
+      "retry": "再試行"
     },
     "home": {
       "avatarContent": {
         "name": "桐生トア",
-        "description": "僕は最新のテクノロジーとフレームワークを使用して美しい製品を制作します。僕は素晴らしい製品を構築することに情熱を傾ける開発者です。"
+        "description": "最新の技術とフレームワークを用いて、美しい製品を開発しています。素晴らしい製品作りに情熱を注ぐ開発者です。"
       },
       "about": {
         "title": "僕について",
-        "description": "日本在住の学生で、小学生の頃から趣味でプログラミングをはじめた。初めの頃は HTML と CSS を使った静的サイトを制作していたけど、現在はトレンドの React を使ってウェブサイトなどを制作している。好きな言語は、TypeScript で、好きなフレームワークは Next.js",
+        "description": "日本在住の学生で、小学生の頃から趣味でプログラミングを始めました。初めはHTMLとCSSを使った静的サイトを制作していましたが、現在はReactを使用したトレンドのウェブサイトを制作しています。TypeScriptとNext.jsが特にお気に入りです。",
         "items": {
-          "react": "Web とネイティブユーザインターフェースのためのライブラリ",
-          "typescript": "JavaScriptのスーパーセットとなるプログラミング言語",
-          "nextjs": "Web 向けReact フレームワーク"
+          "react": "Webとネイティブユーザーインターフェースのためのライブラリ",
+          "typescript": "JavaScriptのスーパーセットであるプログラミング言語",
+          "nextjs": "Web向けReactフレームワーク"
         },
-        "technologies": "使用できる技術と言語",
-        "technologies-description": "カードを押すと概要が表示されます"
+        "technologies": "使用可能な技術と言語",
+        "technologies-description": "カードをクリックすると概要が表示されます"
       },
       "serverWorldMap": {
-        "title": "{service} を使用しています",
-        "description": "クラウドホスティングサービスを使用して世界各地のサーバーからウェブサイトをホスティングしています。"
+        "title": "{service} を利用しています",
+        "description": "クラウドホスティングサービスを活用し、世界各地のサーバーからウェブサイトを提供しています。"
       }
     },
     "projects": {
@@ -95,7 +95,7 @@
       "titleContent": {
         "title1": "桐生トア",
         "title2": "プロジェクト履歴",
-        "description": "桐生トアのプロジェクト概要ページです。このリストは、制作,貢献したプロジェクトが必ず含まれるとは限りません。"
+        "description": "桐生トアのプロジェクト概要ページです。このリストには、全ての制作・貢献したプロジェクトが含まれるわけではありません。"
       }
     },
     "contact": {
@@ -103,19 +103,19 @@
         "title": "お問い合わせ"
       },
       "attention": {
-        "title": "注意",
+        "title": "注意事項",
         "listItems": {
-          "1": "ご記入いただいた個人情報は、お問い合わせへの回答、情報提供のために使用させていただきます。",
-          "2": "個人情報を正しくご記入いただけない場合やお問い合わせ内容によっては、回答できない場合がございます。",
-          "3": "お問い合わせ内容によっては、回答にお時間をいただく場合がございます。"
+          "1": "ご記入いただいた個人情報は、お問い合わせへの対応や情報提供に使用します。",
+          "2": "個人情報が正しく記載されていない場合や内容によっては、回答できない場合があります。",
+          "3": "お問い合わせ内容によっては、回答にお時間をいただく場合があります。"
         }
       },
       "form": {
         "fields": {
-          "company": "会社名 (任意)",
-          "name": "名前",
+          "company": "会社名（任意）",
+          "name": "お名前",
           "email": "メールアドレス",
-          "subject": "主題",
+          "subject": "件名",
           "subject-lists": {
             "1": "制作に関するお問い合わせ",
             "2": "機能やバグに関するお問い合わせ",
@@ -127,25 +127,26 @@
           "message": "メッセージ"
         },
         "errors": {
-          "nameRequired": "名前を入力してください",
-          "emailInvalid": "有効なメールアドレスを入力してください",
-          "subjectRequired": "主題を選択してください",
-          "messageRequired": "メッセージを入力してください"
+          "nameRequired": "お名前を入力してください。",
+          "emailInvalid": "有効なメールアドレスを入力してください。",
+          "subjectRequired": "件名を選択してください。",
+          "messageRequired": "メッセージを入力してください。",
+          "max": "最大 {length} 字まで入力可能です。"
         },
         "success": {
-          "title": "送信に成功しました！",
-          "description": "フォームの送信が問題なく完了しました。"
+          "title": "送信が成功しました！",
+          "description": "フォームの送信が正常に完了しました。"
         },
         "error": {
           "title": "送信に失敗しました！",
-          "description": "フォームの送信中に問題が発生しました。"
+          "description": "フォーム送信中にエラーが発生しました。"
         },
         "loading": {
           "title": "送信中...",
-          "description": "現在フォームを送信中です。"
+          "description": "フォームを送信しています。"
         },
         "submittedMessage": "フォームを送信しました。",
-        "newFormButton": "新規フォームを開く",
+        "newFormButton": "新しいフォームを作成する",
         "submitButton": "送信",
         "loadingButton": "送信中..."
       }

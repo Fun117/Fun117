@@ -2,7 +2,7 @@
   "metadata": {
     "title": "Toa Kiryu | Official Website",
     "templateTitle": "Toa Kiryu",
-    "description": "I leverage the latest technologies and frameworks to develop modern, scalable web applications. Skilled in React and TypeScript, I primarily focus on frontend development."
+    "description": "I leverage cutting-edge technologies and frameworks to build modern, scalable web applications. Skilled in React and TypeScript, I specialize in frontend development."
   },
   "open-graph": {
     "/projects": {
@@ -13,11 +13,11 @@
     }
   },
   "colorModeSwitcher": {
-    "label": "Change theme",
-    "color": "{color, select, light  {Light} dark {Dark} system {System} other {Unknown}}"
+    "label": "Change Theme",
+    "color": "{color, select, light {Light} dark {Dark} system {System} other {Unknown}}"
   },
   "localeSwitcher": {
-    "label": "Change language",
+    "label": "Change Language",
     "locale": "{locale, select, ja {🇯🇵 日本語} en {🇺🇸 English} other {Unknown}}"
   },
   "header": {
@@ -28,8 +28,8 @@
     }
   },
   "footer": {
-    "description": "Toa Kiryu Official Website",
-    "copyright": "Copyright © 2024 Toa Kiryu. All rights reserved.",
+    "description": "Official Website of Toa Kiryu",
+    "copyright": "© 2024 Toa Kiryu. All rights reserved.",
     "items": {
       "website": {
         "label": "Website",
@@ -47,7 +47,7 @@
           "nextjs-rich-tpl": "Next.js Rich Tpl",
           "safe-encode": "Safe Encode",
           "scpay": "ScPay",
-          "scratch-building": "Scratch Building",
+          "scratch-building": "Scratch Building Game",
           "scratch-status": "Scratch Status",
           "support-scripts": "Support Scripts",
           "vspodb": "VspoDB",
@@ -64,28 +64,28 @@
       "title": "Page Not Found"
     },
     "error": {
-      "title": "Unknown error",
+      "title": "An Unknown Error Occurred",
       "retry": "Retry"
     },
     "home": {
       "avatarContent": {
         "name": "Toa Kiryu",
-        "description": "I build beautiful products using the latest technologies and frameworks.I am a developer who is passionate about building great products."
+        "description": "I create beautiful and functional products using the latest technologies and frameworks. I'm a passionate developer dedicated to building outstanding solutions."
       },
       "about": {
         "title": "About Me",
-        "description": "I am a student living in Japan who started programming as a hobby in elementary school. Initially, I created static websites using HTML and CSS, but now I develop websites and other projects using the trending React. My favorite programming language is TypeScript, and my favorite framework is Next.js.",
+        "description": "I'm a student based in Japan who began programming as a hobby during elementary school. Initially, I created static websites with HTML and CSS. Now, I develop modern websites and applications using React, with TypeScript as my preferred language and Next.js as my favorite framework.",
         "items": {
           "react": "A library for building user interfaces for web and native applications",
-          "typescript": "A programming language that is a superset of JavaScript",
-          "nextjs": "A React framework for web development"
+          "typescript": "A programming language that extends JavaScript",
+          "nextjs": "A React framework tailored for web development"
         },
-        "technologies": "Available Technologies and Languages",
-        "technologies-description": "Press the card to display an overview."
+        "technologies": "Technologies and Languages I Use",
+        "technologies-description": "Click a card to see its details."
       },
       "serverWorldMap": {
-        "title": "Using {service}",
-        "description": "Hosting websites from servers around the world using a cloud hosting service."
+        "title": "Powered by {service}",
+        "description": "Hosting websites through global cloud servers for optimal performance."
       }
     },
     "projects": {
@@ -94,8 +94,8 @@
       },
       "titleContent": {
         "title1": "Toa Kiryu",
-        "title2": "Project History",
-        "description": "This is the project overview page of Toa Kiryu. This list does not necessarily include all the projects created or contributed to."
+        "title2": "Project Portfolio",
+        "description": "This page provides an overview of my projects. Not all projects I have worked on or contributed to may be listed here."
       }
     },
     "contact": {
@@ -103,11 +103,11 @@
         "title": "Contact"
       },
       "attention": {
-        "title": "Attention",
+        "title": "Important Information",
         "listItems": {
-          "1": "The personal information you provide will be used to respond to your inquiries and provide information.",
-          "2": "If personal information is not entered correctly or depending on the content of your inquiry, we may not be able to respond.",
-          "3": "Depending on the content of your inquiry, it may take some time to respond."
+          "1": "The personal information you provide will be used solely for responding to inquiries and providing relevant information.",
+          "2": "Incomplete or incorrect personal information, as well as certain inquiry content, may result in no response.",
+          "3": "Responses may take some time depending on the nature of your inquiry."
         }
       },
       "form": {
@@ -117,20 +117,21 @@
           "email": "Email Address",
           "subject": "Subject",
           "subject-lists": {
-            "1": "Inquiries about production",
-            "2": "Inquiries about features or bugs",
-            "3": "Inquiries about service details",
-            "4": "Inquiries about accounts or support",
-            "5": "Inquiries about collaboration or proposals",
-            "6": "Others"
+            "1": "Inquiries about development",
+            "2": "Questions about features or bugs",
+            "3": "Inquiries about services",
+            "4": "Account or support-related inquiries",
+            "5": "Collaboration or proposal inquiries",
+            "6": "Other inquiries"
           },
           "message": "Message"
         },
         "errors": {
-          "nameRequired": "Please enter your name",
-          "emailInvalid": "Please enter a valid email address",
-          "subjectRequired": "Please select a subject",
-          "messageRequired": "Please enter a message"
+          "nameRequired": "Please enter your name.",
+          "emailInvalid": "Please provide a valid email address.",
+          "subjectRequired": "Please select a subject.",
+          "messageRequired": "Please enter your message.",
+          "max": "Maximum {length} characters allowed."
         },
         "success": {
           "title": "Submission Successful!",
@@ -138,14 +139,14 @@
         },
         "error": {
           "title": "Submission Failed!",
-          "description": "There was an error submitting your form."
+          "description": "An error occurred while submitting your form."
         },
         "loading": {
           "title": "Submitting...",
-          "description": "Your form is being submitted."
+          "description": "Your form is being processed."
         },
         "submittedMessage": "Your form has been submitted.",
-        "newFormButton": "Open a New Form",
+        "newFormButton": "Submit Another Form",
         "submitButton": "Submit",
         "loadingButton": "Submitting..."
       }

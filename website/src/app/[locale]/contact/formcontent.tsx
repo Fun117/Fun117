@@ -68,11 +68,3 @@ const CustomFormTextarea = React.forwardRef<
 });
 CustomFormTextarea.displayName = "CustomFormTextarea";
 export { CustomFormTextarea };
-
-export function CustomFormErrorMessage({ children }: { children: ReactNode }) {
-  return (
-    <p className="text-[2.86458vw] lg:!text-sm text-[#dc3232] leading-[1.8] mt-[.35em]">
-      {children}
-    </p>
-  );
-}
