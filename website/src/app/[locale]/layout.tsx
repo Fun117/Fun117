@@ -68,7 +68,11 @@ export async function generateMetadata(props: {
     return alternates;
   };
 
-  console.log(nowUrl);
+  const openGraphTitle = `${
+    tOpenGraph.has(`${nowUrl}.title`)
+      ? `${tOpenGraph(`${nowUrl}.title`)} | ${t("templateTitle")}`
+      : t(`title`)
+  }`;
   const openGraphImageURL = `${
     nowUrl === "/"
       ? `/${locale}/api/og`
@@ -120,10 +124,7 @@ export async function generateMetadata(props: {
         config.themeConfig?.metadata?.openGraph?.siteName ||
         config.title ||
         t(`title`),
-      title:
-        config.themeConfig?.metadata?.openGraph?.title ||
-        config.title ||
-        t(`title`),
+      title: openGraphTitle,
       description:
         config.themeConfig?.metadata?.openGraph?.description ||
         config.description ||
@@ -141,10 +142,7 @@ export async function generateMetadata(props: {
         config.themeConfig?.metadata?.creator ||
         "toakiryu"
       }`,
-      title:
-        config.themeConfig?.metadata?.twitter?.title ||
-        config.title ||
-        t(`title`),
+      title: openGraphTitle,
       description:
         config.themeConfig?.metadata?.twitter?.description ||
         config.description ||

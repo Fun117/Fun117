@@ -1,8 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import {
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  useEffect,
+  useState,
+} from "react";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import {
+  Formats,
+  MarkupTranslationValues,
+  RichTranslationValues,
+  TranslationValues,
+  useTranslations,
+} from "next-intl";
 import { Circle } from "lucide-react";
 
 import { z } from "zod";
@@ -12,7 +24,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import toast from "react-hot-toast";
 import { GFromQuickSubmitFormPOST } from "gform-quick-submit";
 
-import { Button, Select, SelectItem } from "@nextui-org/react";
+import { Button, Input, Select, SelectItem } from "@nextui-org/react";
 import {
   CustomFormDt,
   CustomFormErrorMessage,
@@ -20,7 +32,7 @@ import {
   CustomFormLabel,
   CustomFormTextarea,
 } from "./formcontent";
-import { useSearchParams } from "next/navigation";
+import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
 
 export function ContactPageTopTitle() {
   const t = useTranslations("pages.contact");
@@ -42,26 +54,37 @@ export function ContactPageTopTitle() {
 }
 
 export function ContactPageFormContent() {
-  const searchParams = useSearchParams();
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isFormState, setIsFormState] = useState<boolean>(false);
-
+  const searchParams = useSearchParams();
   const t = useTranslations("pages.contact");
 
   const contactSchema = z.object({
-    company: z.string().optional(),
-    name: z.string().min(1, t("form.errors.nameRequired")),
-    email: z.string().email(t("form.errors.emailInvalid")),
-    subject: z.string().min(1, t("form.errors.subjectRequired")),
-    message: z.string().min(1, t("form.errors.messageRequired")),
+    company: z.string().max(50, t("form.errors.max", { length: "50" })),
+    name: z
+      .string()
+      .min(1, t("form.errors.nameRequired"))
+      .max(50, t("form.errors.max", { length: "50" })),
+    email: z
+      .string()
+      .email(t("form.errors.emailInvalid"))
+      .max(50, t("form.errors.max", { length: "50" })),
+    subject: z
+      .string()
+      .min(1, t("form.errors.subjectRequired"))
+      .max(50, t("form.errors.max", { length: "50" })),
+    message: z
+      .string()
+      .min(1, t("form.errors.messageRequired"))
+      .max(500, t("form.errors.max", { length: "500" })),
   });
 
   type ContactFormValues = z.infer<typeof contactSchema>;
 
   const {
     register,
-    handleSubmit,
     reset,
+    handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
@@ -143,6 +166,7 @@ export function ContactPageFormContent() {
                     id="company"
                     type="text"
                     defaultValue={searchParams.get("company") || undefined}
+                    errorMessage={errors.company?.message}
                     {...register("company")}
                   />
                 </span>
@@ -157,15 +181,11 @@ export function ContactPageFormContent() {
                   <CustomFormInput
                     id="name"
                     type="text"
-                    isRequired
                     defaultValue={searchParams.get("name") || undefined}
-                    {...register("name")}
+                    isInvalid={!!errors.name}
+                    errorMessage={errors.name?.message}
+                    {...register("name", { required: true })}
                   />
-                  {errors.name && (
-                    <CustomFormErrorMessage>
-                      {errors.name.message}
-                    </CustomFormErrorMessage>
-                  )}
                 </span>
               </div>
             </CustomFormLabel>
@@ -178,15 +198,11 @@ export function ContactPageFormContent() {
                   <CustomFormInput
                     id="email"
                     type="email"
-                    isRequired
                     defaultValue={searchParams.get("email") || undefined}
+                    isInvalid={!!errors.email}
+                    errorMessage={errors.email?.message}
                     {...register("email")}
                   />
-                  {errors.email && (
-                    <CustomFormErrorMessage>
-                      {errors.email.message}
-                    </CustomFormErrorMessage>
-                  )}
                 </span>
               </div>
             </CustomFormLabel>
@@ -199,13 +215,13 @@ export function ContactPageFormContent() {
                   <Select
                     id="subject"
                     aria-label="subject a select"
-                    isRequired
                     defaultSelectedKeys={
                       searchParams.get("subject")
                         ? [`${searchParams.get("subject")}`]
                         : []
                     }
-                    errorMessage={t("form.errors.subjectRequired")}
+                    isInvalid={!!errors.subject}
+                    errorMessage={errors.subject?.message}
                     className="text-[3.38542vw] lg:!text-base w-full h-fit py-[1.5625vw] px-[2.34375vw] lg:!py-[18px] lg:!px-[15px] rounded-[1.30208vw] lg:!rounded-[10px]"
                     {...register("subject")}
                   >
@@ -246,11 +262,6 @@ export function ContactPageFormContent() {
                       {t("form.fields.subject-lists.6")}
                     </SelectItem>
                   </Select>
-                  {errors.subject && (
-                    <CustomFormErrorMessage>
-                      {errors.subject.message}
-                    </CustomFormErrorMessage>
-                  )}
                 </span>
               </div>
             </CustomFormLabel>
@@ -263,21 +274,17 @@ export function ContactPageFormContent() {
                   <CustomFormTextarea
                     id="message"
                     type="text"
-                    isRequired
                     disableAnimation
                     disableAutosize
+                    defaultValue={searchParams.get("message") || undefined}
+                    isInvalid={!!errors.message}
+                    errorMessage={errors.message?.message}
                     classNames={{
                       base: "w-full",
                       input: "resize-y min-h-[40px] max-h-[50vw]",
                     }}
-                    defaultValue={searchParams.get("message") || undefined}
                     {...register("message")}
                   />
-                  {errors.message && (
-                    <CustomFormErrorMessage>
-                      {errors.message.message}
-                    </CustomFormErrorMessage>
-                  )}
                 </span>
               </div>
             </CustomFormLabel>
